@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Адаптив для моб -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="fonts/Raleway/stylesheet.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- Swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header position-relative">
+            <div class="bg-select">
+            <div class="container-xl p-0">
+                <div class="col-sm d-sm-flex justify-content-sm-between d-flex flex-wrap justify-content-center text-light pt-1 pb-1">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div class="col d-flex align-items-center">
+                        <a href="#login">Login</a>
+                        <span>/</span>  
+                        <a href="#sign">Signup</a>   
+                        </div>
+                        <div class="col">
+                            <select class="form-select-sm border-0 shadow-none bg-select" aria-label=".form-select-sm example">
+                                <option selected>USD</option>
+                                <option value="1">EUR</option>
+                                <option value="2">RUB</option>
+                                <option value="3">COM</option>
+                            </select>
+                        </div>
+                    </div>
+                                        <div class="d-flex flex-wrap justify-content-center align-items-center">
+                        <a href="#" class="pe-3 me-3 border-right">
+                            Help 
+                        </a>
+                        <a href="#" class="pe-3 me-3 border-right">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i> Wishlist 
+                        </a>
+                        <div class="pe-2">
+                            <select class="form-select-sm border-0 shadow-none bg-select" aria-label=".form-select-sm example">
+                                <option selected>English</option>
+                                <option value="1">Russia</option>
+                                <option value="2">Arabika</option>
+                                <option value="3">Kyrgystan</option>
+                            </select>
+                        </div>
+                        <a href="#" class="button__dowl ps-2">
+                            Download App
+                        </a>
+                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="bg-header">
+                                    <div class="container-xl p-0 pt-3">
+                                        <div class="d-flex flex-wrap justify-content-xl-between align-items-center d-flex justify-content-center header__nav p-1 pt-3 pb-3">
+                        <div class="col-md pt-1 pb-1"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="" class="p-0 img-fluid"></picture></div>
+                        <div class="ps-2 pt-1 pb-1 col-md d-sm-flex flex-sm-nowrap justify-content-sm-end d-flex flex-wrap justify-content-center">
+                            <div class="col-md-4 input-group pe-3 ps-3 h-100 header__nav_inputs">
+                                <input type="text" class="form-control border-0 shadow-none header__nav_input h-35vh" placeholder="Search for...">
+                                <span class="input-group-btn text-center header__nav_select">
+                                    <select class="ps-3 pe-3 form-select-sm shadow-none h-35vh" aria-label=".form-select-sm example"  id="select__border_right">
+                                        <option selected>All Categories</option>
+                                        <option value="1">Russia</option>
+                                        <option value="2">Arabika</option>
+                                        <option value="3">Kyrgystan</option>
+                                    </select>
+                                </span>
+                                <span class="input-group-btn header__nav_btn">
+                                <button class="btn btn-secondary button__search border-0 shadow-none h-35vh" type="button"><i class="fa fa-search text-dark" aria-hidden="true"></i></button>
+                                </span>
+                            </div>
+                            <div class="row bg-light header__nav_text_body align-items-center mt-sm-0 mt-2 pt-sm-0 pb-sm-0 pt-2 pb-2 me-sm-0">
+                                <div class="d-flex justify-content-center align-items-center header__nav_text_1">
+                                    <picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.png" alt=""></picture> 
+                                    <span class="header__nav_icon"></span>
+                                </div>
+                                <div class="header__nav_text_2 d-flex justify-content-center align-items-center">
+                                    0_Item:   
+                                    <a href="#" class="text-primary"> $0.00</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="d-md-flex flex-md-nowrap align-items-center d-flex flex-wrap justify-content-center header__nav pt-3 navbar2">
+                        <div class="col-xl-3 col-md-2 col-12 position-relative">
+                            <div class="col navbar2__text_nav ps-2 pe-2 pt-3 pb-3 d-flex justify-content-between align-items-center">
+                                Departments <i class="fa fa-bars" id="navbar2__buttons_menu" aria-hidden="true"></i>
+                            </div>
+                            <div class="col d-flex flex-column justify-content-center align-items-center navbar2__menu_ico" id="navbar2__menu">
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-desktop pe-2" aria-hidden="true"></i>Fashion & Clothing
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-mobile pe-2" aria-hidden="true"></i>Mobile Phones
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-futbol-o pe-2" aria-hidden="true"></i>Sports & Outerwear
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-envira pe-2" aria-hidden="true"></i>Foods & Fruits
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-tag pe-2" aria-hidden="true"></i>Beauty & Health
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-shopping-basket pe-2" aria-hidden="true"></i>Shoes & Bags
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-camera-retro pe-2" aria-hidden="true"></i>Decors & Home
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-plug pe-2" aria-hidden="true"></i>Electronics & Hitech
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-headphones pe-2" aria-hidden="true"></i>Accessories
+                                    </a>    
+                                </div>
+                                <div class="navbar2__bor"></div>
+                                <div class="pt-3 pb-3"> 
+                                    <a href="#">
+                                        <i class="fa fa-apple pe-2" aria-hidden="true"></i>Digital Software
+                                    </a>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-100 d-flex flex-md-nowrap justify-content-md-between flex-wrap justify-content-center ps-2 pe-2 text-white bg-dark">
+                            <div class="pt-3 pb-3 col-md-8 col-12 d-flex flex-wrap align-items-center justify-content-around navbar2__text_nav_2">
+                                <a href="#" class="ps-1 pe-1">Home</a>          
+                                <a href="#" class="ps-1 pe-1">Shop</a>          
+                                <a href="#" class="ps-1 pe-1">Fashion</a>          
+                                <a href="#" class="ps-1 pe-1">Electronics</a>          
+                                <a href="#" class="ps-1 pe-1">pages</a>          
+                                <a href="#" class="ps-1 pe-1">Features</a>          
+                                <a href="#" class="ps-1 pe-1">BLog</a> 
+                            </div>
+                            <div class="ps-2 pe-2 d-flex flex-sm-nowrap flex-wrap justify-content-center align-items-center navbar2__text_nav_3">
+                                Call US Free:
+                                <a href="tel: +1-800-777-7889" class="ms-1 text-center"> 1-800-777-7889</a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </header>
+        <article class="article">
+            <div class="container-xl p-0 pt-3">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container--intro swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" aria-live="polite">
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 50% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-md-5 fs-6 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 10% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-5 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 25% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-5 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 90% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-5 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 5% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-5 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 3% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-5 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-absolute h-40 d-flex align-items-center swiper__ps_text">
+                                <div class="position-relative d-flex flex-column">
+                                    <div class="fs-40">Upto 99% Offer!</div> 
+                                    <p class="text-white pt-3 fs-4">For all Men’s Collections</p> 
+                                    <div class="col d-flex align-items-center"><a href="#" class="fs-5 d-flex justify-content-center align-items-center swiper__text_btn">Shop Now</a></div>
+                                </div>
+                            </div>
+                            <picture><source srcset="img/Img_Bg.webp" type="image/webp"><img src="img/Img_Bg.png" alt="" class="h-40 w-100"></picture>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div> 
+                <div class="d-flex flex-wrap justify-content-xl-between d-flex justify-content-around pt-3 w-100">
+                    <div class="d-md-flex justify-content-md-start align-items-center d-flex justify-content-center position-relative pt-1 pb-1">
+                        <picture><source srcset="img/Img_Bg_small.webp" type="image/webp"><img src="img/Img_Bg_small.png" alt=""></picture>
+                        <div class="d-flex flex-column justify-content-center align-items-center position-absolute ps-md-5">
+                            <div class="fs-4 fs-40">Big Offer Day</div> 
+                            <div class="bg-a5c655 w-100 text-center"><a href="#" class="fs-6 fs-40">Extra 25% Off</a></div> 
+                            <div class="fs-3 text-white">At $199.00</div> 
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center position-relative pt-1 pb-1">
+                        <picture><source srcset="img/Img_Bg_small.webp" type="image/webp"><img src="img/Img_Bg_small.png" alt=""></picture>
+                        <div class="d-flex flex-column justify-content-center align-items-center position-absolute ps-5">
+                            <div class="fs-4 text-dark fs-40">cANON eos</div> 
+                            <div class="fs-3 text-white">UPTO 30% FLAT OFFER!</div>
+                            <div class="bg-24bbbc text-center"><a href="#" class="fs-6 fs-40 p-3">Special Offer!</a></div> 
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-xl-end justify-content-center align-items-center position-relative  pt-1 pb-1">
+                        <picture><source srcset="img/Img_Bg_small.webp" type="image/webp"><img src="img/Img_Bg_small.png" alt=""></picture>
+                        <div class="d-flex flex-column align-items-center position-absolute pe-xl-5">
+                            <div class="fs-4 text-dark fs-40">Letv 920</div>
+                            <div class="fs-3 text-dark">Oneday sale</div> 
+                            <div class="fs-3 text-white">New Arrivals</div> 
+                            <div class="bg-white w-100 text-center"><a href="#" class="fs-6 fs-40 text-dark">Only $799</a></div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__baners position-relative">
+                    <div class="baners_1 pe-xl-2 p-0">
+                        <div class="bg-secondary-50 d-flex align-items-center justify-content-between pe-2">
+                            <div class="gallery-title ms-md-4 ms-1 fs-4">hOT dEALS</div> 
+                            <div class="d-flex justify-content-center text-center">
+                                <i class="fa fa-angle-left fs-5 m-1" aria-hidden="true" id="baners__1_left"></i>
+                                <i class="fa fa-angle-right fs-5 m-1" aria-hidden="true" id="baners__1_right"></i>
+                            </div>
+                        </div>
+                        <div class="position-relative w-100">
+                            <div class="swiper-container swiper-container--reviews swiper-container-initialized swiper-container-horizontal">
+                                <div class="swiper-wrapper" aria-live="polite">
+                                    <div class="swiper-slide gallert__product col-md-4 position-relative w-100">
+                                        <div class="position-relative">
+                                            <picture><source srcset="img/portfolio/mobile/mobile_1.webp" type="image/webp"><img src="img/portfolio/mobile/mobile_1.jpg" alt="" class="portfolio__img w-100"></picture>
+                                            <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                                <div class="d-flex justify-content-evenly">
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                            <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                            <div class="text-dark fs-6 rb-500">$99.00</div>
+                                            <div class="rating d-flex align-items-end">
+                                                <div class="rating__body position-relative">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value d-none">4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide gallert__product col-md-2 position-relative w-100">
+                                        <div class="position-relative">
+                                            <picture><source srcset="img/portfolio/sports/sports_3.webp" type="image/webp"><img src="img/portfolio/sports/sports_3.jpg" alt="" class="portfolio__img w-100"></picture>
+                                            <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                                <div class="d-flex justify-content-evenly">
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                            <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                            <div class="text-dark fs-6 rb-500">$59.00</div>
+                                            <div class="rating d-flex align-items-end">
+                                                <div class="rating__body position-relative">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value d-none">2.5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide gallert__product col-md-4 position-relative w-100">
+                                        <div class="position-relative">
+                                            <picture><source srcset="img/portfolio/mobile/mobile_3.webp" type="image/webp"><img src="img/portfolio/mobile/mobile_3.jpg" alt="" class="portfolio__img w-100"></picture>
+                                            <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                                <div class="d-flex justify-content-evenly">
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                            <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                            <div class="text-dark fs-6 rb-500">$9.02</div>
+                                            <div class="rating d-flex align-items-end">
+                                                <div class="rating__body position-relative">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value d-none">5</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide gallert__product col-md-4 position-relative w-100">
+                                        <div class="position-relative">
+                                            <picture><source srcset="img/portfolio/foods/foods_2.webp" type="image/webp"><img src="img/portfolio/foods/foods_2.jpg" alt="" class="portfolio__img w-100"></picture>
+                                            <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                                <div class="d-flex justify-content-evenly">
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                            <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                            <div class="text-dark fs-6 rb-500">$1.00</div>
+                                            <div class="rating d-flex align-items-end">
+                                                <div class="rating__body position-relative">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value d-none">3.6</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide gallert__product col-md-4 position-relative w-100">
+                                        <div class="position-relative">
+                                            <picture><source srcset="img/portfolio/foods/foods_3.webp" type="image/webp"><img src="img/portfolio/foods/foods_3.jpg" alt="" class="portfolio__img w-100"></picture>
+                                            <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                                <div class="d-flex justify-content-evenly">
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                    <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                            <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                            <div class="text-dark fs-6 rb-500">$0.7</div>
+                                            <div class="rating d-flex align-items-end">
+                                                <div class="rating__body position-relative">
+                                                    <div class="rating__active"></div>
+                                                    <div class="rating__items">
+                                                        <input type="radio" name="rating" class="rating__item" value="1">
+                                                        <input type="radio" name="rating" class="rating__item" value="2">
+                                                        <input type="radio" name="rating" class="rating__item" value="3">
+                                                        <input type="radio" name="rating" class="rating__item" value="4">
+                                                        <input type="radio" name="rating" class="rating__item" value="5">
+                                                    </div>
+                                                </div>
+                                                <div class="rating__value d-none">2.4</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex justify-content-evenly">
+                                    <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center portfolio__baners1_ico"><div class="rb-500 fs-6">02</div><div class="rb-400 fs-6 text-black-50">Days</div></div>
+                                    <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center portfolio__baners1_ico"><div class="rb-500 fs-6">12</div><div class="rb-400 fs-6 text-black-50">Hrs</div></div>
+                                    <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center portfolio__baners1_ico"><div class="rb-500 fs-6">24</div><div class="rb-400 fs-6 text-black-50">Mins</div></div>
+                                    <div class="w-100 d-flex flex-column justify-content-center align-items-center text-center portfolio__baners1_ico"><div class="rb-500 fs-6">56</div><div class="rb-400 fs-6 text-black-50">Sec</div></div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <section id="portfolio" class="ps-md-1 col-12 portfolio">
+                        <div class="conteiner">
+                            <div class="d-md-flex justify-content-md-between align-items-center d-flex flex-wrap justify-content-center align-items-center">
+                                <span class="gallery-title fs-4 d-flex align-items-center">New Arrivals</span>
+                                <div class="d-flex justify-content-end justify-content-center flex-wrap">
+                                    <button class="btn btn-default filter-button show shadow-none" data-filter="all">All</button>
+                                    <button class="btn btn-default filter-button shadow-none" data-filter="fashion">Fashion</button>
+                                    <button class="btn btn-default filter-button shadow-none" data-filter="mobile">Mobile</button>
+                                    <button class="btn btn-default filter-button shadow-none" data-filter="electronics">Electronics</button>
+                                    <button class="btn btn-default filter-button shadow-none" data-filter="foods">Foods</button>
+                                    <button class="btn btn-default filter-button shadow-none" data-filter="sports">Sports</button>
+                                </div>
+                            </div>
+                            <div class="d-md-flex justify-content-md-start flex-wrap d-flex justify-content-center rb-400" aria-live="polite">
+                                <div class="gallert__product filter position-relative fashion">
+                                    <div class="position-absolute pt-3 ps-3"> 
+                                        <div class="bg-danger text-white rounded fs-6 portfolio__padding">sale</div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/fashion/fashion_1.webp" type="image/webp"><img src="img/portfolio/fashion/fashion_1.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$56.00</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative mobile">
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/mobile/mobile_1.webp" type="image/webp"><img src="img/portfolio/mobile/mobile_1.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$9.03</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">2.4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative foods">
+                                    <div class="position-absolute pt-3 ps-3"> 
+                                        <div class="bg-warning text-white rounded fs-6 portfolio__padding">New</div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/foods/foods_1.webp" type="image/webp"><img src="img/portfolio/foods/foods_1.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$23.00</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">3.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative electronics">
+                                    <div class="position-absolute pt-3 ps-3"> 
+                                        <div class="bg-danger text-white rounded fs-6 portfolio__padding">sale</div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/electronics/electronics_1.webp" type="image/webp"><img src="img/portfolio/electronics/electronics_1.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$20.00</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">4.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative sports">
+                                    <div class="position-absolute pt-3 ps-3"> 
+                                        <div class="bg-warning text-white rounded fs-6 portfolio__padding">New</div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/sports/sports_1.webp" type="image/webp"><img src="img/portfolio/sports/sports_1.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$99.00</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative sports">
+                                    <div class="position-absolute pt-3 ps-3"> 
+                                        <div class="bg-danger text-white rounded fs-6 portfolio__padding">sale</div>
+                                    </div>
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/sports/sports_2.webp" type="image/webp"><img src="img/portfolio/sports/sports_2.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$99.99</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">3.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative electronics">
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/electronics/electronics_2.webp" type="image/webp"><img src="img/portfolio/electronics/electronics_2.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$11.00</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">4.5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallert__product filter position-relative mobile">
+                                    <div class="position-relative">
+                                        <picture><source srcset="img/portfolio/mobile/mobile_2.webp" type="image/webp"><img src="img/portfolio/mobile/mobile_2.jpg" alt="" class="portfolio__img"></picture>
+                                        <div class="position-absolute bottom-0 w-100 portfolio__border_icons d-none">
+                                            <div class="d-flex justify-content-evenly">
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-exchange" aria-hidden="true"></i></a>
+                                                <a href="#" class="w-100 d-flex justify-content-center align-items-center text-center portfolio__border_ico"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column justify-content-center align-items-center text-center gallert__product_info bg-white">
+                                        <div class="text-dark fs-6 rb-400">Slooven Stripped T-shirt</div>
+                                        <div class="text-dark fs-6 rb-500">$99.00</div>
+                                        <div class="rating d-flex align-items-end">
+                                            <div class="rating__body position-relative">
+                                                <div class="rating__active"></div>
+                                                <div class="rating__items">
+                                                    <input type="radio" name="rating" class="rating__item" value="1">
+                                                    <input type="radio" name="rating" class="rating__item" value="2">
+                                                    <input type="radio" name="rating" class="rating__item" value="3">
+                                                    <input type="radio" name="rating" class="rating__item" value="4">
+                                                    <input type="radio" name="rating" class="rating__item" value="5">
+                                                </div>
+                                            </div>
+                                            <div class="rating__value d-none">3.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="css/swiper-bundle.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

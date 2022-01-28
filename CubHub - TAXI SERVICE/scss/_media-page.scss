@@ -1,0 +1,391 @@
+/* ===================================  Page  --Start--  =================================== */
+._title {
+	font-size: calc(28px + (38 - 28) * ((100vw - 767px) / (767 - 250)));
+}
+._texts {
+	font-size: calc(18px + (22 - 18) * ((100vw - 767px) / (767 - 250)))
+}
+._button button {
+    font-size: calc(20px + (28 - 20) * ((100vw - 250px) / (767 - 250)));
+}
+/* ===================================  Hi  --Start--  =================================== */
+.hi {
+	&__body {
+		height: calc(320px + (680 - 320) * ((100vw - 250px) / (767 - 250)));
+		justify-content: center;
+	}
+	&__title {
+		padding-top: 0px;
+		padding-bottom: calc(40px + (80 - 40) * ((100vw - 250px) / (767 - 250)));
+		a:first-child {
+			font-size: calc(30px + (50 - 30) * ((100vw - 250px) / (767 - 250)));
+		}
+		a:last-child {
+			font-size: calc(12px + (25 - 12) * ((100vw - 250px) / (767 - 250)));
+			line-height: 160%;
+			letter-spacing: 8px;
+		}
+	}
+	&__image {
+		transform: translateY(28%);
+		&_img {
+			max-width: 826px;
+		}
+	}
+}
+/* ===================================  Hi  --End--  =================================== */
+/* ===================================  Order  --Start--  =================================== */
+.order {
+	background-color: $colorYellow1;
+	&__body {
+		flex-direction: column;
+	}
+	&__column {
+		max-width: 100%;
+		&_contact {
+			transform: translate(-220%, 0px);
+		}
+		&:first-child {
+			padding: 0px calc(10px + (40 - 10) * ((100vw - 250px) / (767 - 250)));
+			text-align: center;
+		}
+		&:last-child {
+			padding-top: 50px;
+			justify-content: center;
+			.order__title {
+				padding: 16px 26px;
+				font-size: calc(12px + (22 - 12) * ((100vw - 250px) / (767 - 250)));
+				span {
+					font-size: calc(12px + (22 - 12) * ((100vw - 250px) / (767 - 250)));
+				}
+			}
+		}
+		&_contact {
+			padding: 0px calc(2px + (20 - 2) * ((100vw - 250px) / (767 - 250)));
+			max-width: calc(250px + (640 - 250) * ((100vw - 250px) / (767 - 250)));
+		}
+	}
+	&__form {
+		padding: 0px calc(8px + (20 - 8) * ((100vw - 250px) / (767 - 250)));
+		&_content {
+			flex-direction: column;
+			align-items: center;
+		}
+		&_column {
+			max-width: 100%;
+			&:first-child {
+					padding: 0px 0px;
+				}
+			&:nth-child(2) {
+				padding: 0px 0px;
+				.order__form_input label {
+					color: $colorBlack;
+				}
+			}
+		}
+		&_input {
+			margin-top: calc(0px + (20 - 0) * ((100vw - 250px) / (767 - 250)));
+			padding: calc(32px + (38 - 32) * ((100vw - 250px) / (767 - 250))) 0px;
+			input {
+				padding: calc(10px + (19 - 10) * ((100vw - 250px) / (767 - 250))) 0px;
+			}
+		}
+	}
+	&__title {
+		&_content {
+			transform: translate(0px, 220%);
+			transition: all 0.8s ease 0s;
+			.order__column:first-child .order__title._active & {
+				transform: translate(0px, 0px);
+			}
+		}
+		span:first-child {
+			font-size: calc(22px + (34 - 22) * ((100vw - 250px) / (767 - 250)));
+		}
+	}
+	&__title span:last-child {
+		font-size: calc(16px + (30 - 16) * ((100vw - 250px) / (767 - 250)));
+		line-height: 125%;
+	}
+	&__button {
+		display: flex;
+    	justify-content: center;
+		button {
+			font-size: calc(16px + (28 - 16) * ((100vw - 250px) / (767 - 250)));
+		}
+	}
+	&__texts {
+		padding: 26px 0px;
+	}
+}
+/* ===================================  Order  --End--  =================================== */
+/* ===================================  Our  --Start--  =================================== */
+.our {
+	background-color: $colorWhite;
+	&__body {
+		padding-top: calc(35px + (50 - 35) * ((100vw - 250px) / (767 - 250)));
+		padding-bottom: calc(35px + (65 - 35) * ((100vw - 250px) / (767 - 250)));
+	}
+	&__content {
+		padding-top: 0px;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__column {
+		margin: calc(20px + (60 - 20) * ((100vw - 250px) / (767 - 250))) 0px;
+		max-width: 70%;
+		&:nth-child(2) {
+			margin: calc(20px + (60 - 20) * ((100vw - 250px) / (767 - 250))) 0px;
+		}
+		&_content {
+			background-color: $colorYellow1;
+		}
+		&_title {
+			font-size: calc(18px + (30 - 18) * ((100vw - 250px) / (767 - 250)));
+			line-height: 120%;
+		}
+		&_price {
+			color: $colorBlack;
+			font-size: calc(24px + (44 - 24) * ((100vw - 250px) / (767 - 250)));
+		}
+		&_button button {
+			color: $colorWhite;
+			background-color: $colorBlack;
+		}
+		&_star {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+/* ===================================  Our  --End--  =================================== */
+/* ===================================  Blog  --Start--  =================================== */
+.blog {
+	&__body {
+		padding: calc(45px + (75 - 45) * ((100vw - 250px) / (767 - 250))) 0px;
+	}
+	&__title {
+		span {
+			&:first-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 250px) / (767 - 250)));
+				line-height: 145%;
+			}
+			&:last-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 250px) / (767 - 250)));
+			}
+		}
+	}
+	&__rows {
+		padding: 30px calc(0px + (22 - 0) * ((100vw - 250px) / (767 - 250))) 0px;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__column {
+		padding: calc(20px + (30 - 20) * ((100vw - 250px) / (767 - 250))) 
+		calc(2px + (60 - 2) * ((100vw - 250px) / (767 - 250)));
+		max-width: 100%;
+		&:nth-child(2) &_content {
+			padding-left: 0px;
+		}
+		&:nth-child(4) &_content {
+			padding-left: 0px;
+		}
+		&_content {
+			padding-right: 0px;
+		}
+		&_icon {
+			padding: calc(22px + (25.5 - 22) * ((100vw - 250px) / (767 - 250)));
+			margin-right: calc(15px + (31 - 15) * ((100vw - 250px) / (767 - 250)));
+			font-size: calc(26px + (30 - 26) * ((100vw - 250px) / (767 - 250)));
+			align-self: center;
+		}
+		&_title {
+			font-size: calc(16px + (32 - 16) * ((100vw - 250px) / (767 - 250)));
+		}
+		&_texts {
+			padding-top: calc(4px + (8 - 4) * ((100vw - 250px) / (767 - 250)));
+			padding-right: 0px;
+			font-size: calc(16px + (22 - 16) * ((100vw - 250px) / (767 - 250)));
+			span {
+				display: none;
+			}
+		}
+	}
+	&__button {
+		padding-top: 20px;
+	}
+}
+/* ===================================  Blog  --End--  =================================== */
+/* ===================================  Download  --Start--  =================================== */
+.download {
+	&__body {
+		padding: calc(50px + (60 - 50) * ((100vw - 250px) / (767 - 250))) 0px;
+	} 
+	&__title {
+		span {
+			&:first-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 250px) / (767 - 250)));
+				line-height: 145%;
+			}
+			&:last-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 250px) / (767 - 250)));
+			}
+		}
+	}
+	&__rows {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__column {
+		max-width: 100%;
+		height: 100%;
+		padding: 0px 0px;
+		text-align: center;
+		&:first-child {
+			padding: 0px calc(2px + (60 - 2) * ((100vw - 250px) / (767 - 250)));
+		}
+		&:last-child {
+			display: none;
+		}
+		&_title {
+			font-size: calc(22px + (25.5 - 22) * ((100vw - 250px) / (767 - 250)));
+		}
+		&_texts {
+			padding: calc(12px + (24 - 12) * ((100vw - 250px) / (767 - 250))) 0px;
+			padding-right: 0px;
+			font-size: calc(24px + (26 - 24) * ((100vw - 767px) / (767 - 250)));
+		}
+	}
+	&__links {
+		padding-top: calc(10px + (32 - 10) * ((100vw - 250px) / (767 - 250)));
+	}
+}
+/* ===================================  Download  --End--  =================================== */
+/* ===================================  Order Now  --Start--  =================================== */
+.ordernow {
+	&__title {
+		span {
+			&:first-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 250px) / (767 - 250)));
+			}
+			&:last-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 250px) / (767 - 250)));
+			}
+		}
+	}
+	&__rows {
+		padding-top: calc(14px + (60 - 14) * ((100vw - 250px) / (767 - 250)));
+		flex-direction: column;
+		align-items: center;
+	}
+	&__column {
+		margin: calc(10px + (24 - 10) * ((100vw - 250px) / (767 - 250))) 0px;
+		max-width: 100%;
+		&:first-child {
+			margin-right: 0px;
+		}
+		&_content {
+			padding-top: calc(18px + (20 - 18) * ((100vw - 250px) / (767 - 250)));
+			padding-bottom: calc(18px + (20 - 18) * ((100vw - 250px) / (767 - 250)));
+			padding-left: calc(16px + (34 - 16) * ((100vw - 250px) / (767 - 250)));
+			padding-right: calc(16px + (34 - 16) * ((100vw - 250px) / (767 - 250)));
+		}
+		&_texts {
+			padding: calc(10px + (20 - 10) * ((100vw - 250px) / (767 - 250))) 0px;
+			font-size: calc(14px + (24 - 14) * ((100vw - 250px) / (767 - 250)));
+		}
+		&_avatar {
+			max-width: calc(50px + (94 - 50) * ((100vw - 250px) / (767 - 250)));
+			width: 100%;
+		}
+		&_title {
+			span {
+				&:first-child {
+					font-size: calc(18px + (25 - 18) * ((100vw - 250px) / (767 - 250)));
+				}
+				&:last-child {
+					color: $colorWhite;
+					font-size: calc(14px + (18 - 14) * ((100vw - 250px) / (767 - 250)));
+				}
+			}
+		}
+	}
+}
+/* ===================================  Order Now  --End--  =================================== */
+/* ===================================  Contacts  --Start--  =================================== */
+.contacts {
+	&__body {
+		padding-top: calc(20px + (70 - 20) * ((100vw - 250px) / (767 - 250)));
+		padding-bottom: calc(20px + (70 - 20) * ((100vw - 250px) / (767 - 250)));
+	}
+	&__title {
+		font-size: calc(16px + (35 - 16) * ((100vw - 250px) / (767 - 250)));
+	}
+	&__number {
+		font-size: calc(30px + (60 - 30) * ((100vw - 250px) / (767 - 250)));
+	}
+}
+/* ===================================  Contacts  --End--  =================================== */
+/* ===================================  Footer  --Start--  =================================== */
+.footer {
+	&__content {
+		padding-bottom: 0px;
+	}
+	&__rows {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__column {
+		max-width: 55%;
+		text-align: center;
+		&:last-child &_texts {
+			padding-bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			a {
+				align-items: center;
+				li {
+					width: calc(30px + (42 - 30) * ((100vw - 250px) / (767 - 250)));
+				}
+				.icon {
+					&-map-marker {
+						font-size: 32px;
+					}
+					&-mobile {
+						font-size: 32px;
+					}
+					&-envelope {
+						font-size: 26px;
+					}
+					&-mouse-pointer {
+						font-size: 26px;
+					}
+				}
+				p {
+					font-size: calc(16px + (24 - 16) * ((100vw - 250px) / (767 - 250)));
+				}
+			}
+		}
+		&_title {
+			font-size: calc(18px + (20 - 18) * ((100vw - 767px) / (767 - 250)));
+		}
+		&_subtexts a {
+			font-size: calc(26px + (32 - 26) * ((100vw - 250px) / (767 - 250)));
+		}
+	}
+	&__programs_title {
+		display: flex;
+		justify-content: center;
+		span {
+			font-size: calc(16px + (24 - 16) * ((100vw - 250px) / (767 - 250)));
+		}
+	}
+}
+/* ===================================  Footer  --End--  =================================== */
+/* ===================================  Page  --End--  =================================== */

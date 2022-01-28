@@ -1,0 +1,15 @@
+/* =============================================  For PC  --Start--  --Start--  ============================================= */
+@media screen and (min-width: 767px) {
+	.header__menu {
+		transform: translate(0px, 180px);
+		transition: all 0.8s ease 0s;
+		.header._active & {
+			transform: translate(0px, 0px);
+		} 
+	}
+	.menu__list {
+		display: flex;
+		align-items: center;
+	}
+}
+/* =============================================  For PC  --Start--  --End--  ============================================= */

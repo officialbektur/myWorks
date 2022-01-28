@@ -1,0 +1,187 @@
+/* --------------------  Обнуление --Начало--  -------------------- */
+*,
+*::before,
+*::after {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	border: 0;
+	-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+/* --------------------  Убираем линию под ссылками  -------------------- */
+a {
+	text-decoration: none;
+}
+/* --------------------  Убираем маркировку  -------------------- */
+ul,
+ol,
+li {
+	list-style: none;
+}
+/* --------------------  Убираем   -------------------- */
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* --------------------  Обнуление --Конец--  -------------------- */
+
+
+
+
+
+html,
+body {
+	min-height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	background: #ff2a2a;
+	color: #000000;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+	overflow-x: hidden;
+}
+body._lock {
+	overflow-y: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+/* --------------------  Page --Начало--  -------------------- */
+.page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+.page__section {
+	position: relative;
+	width: 450px;
+	height: 450px;
+} 
+.page__section::after {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, #000, transparent);
+	opacity: 0.1;
+	transform: rotate(45deg);
+	transform-origin: left;
+	z-index: 10;
+}
+.page__body {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #e40505, #ff4e4e);
+	border-radius: 50%;
+	z-index: 99;
+}
+.page__body::before {
+	content: "";
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background: linear-gradient(315deg, #ff0a0a, #ca0505);
+	border-radius: 50%;
+	z-index: 4;
+}
+.page__body_title {
+	color: #ffffff;
+	font-size: 2em;
+	font-weight: 600;
+	line-height: 140%;
+	z-index: 1000;
+}
+.page i {
+	position: absolute;
+	background: #ffe600;
+	border-radius: 100%;
+	animation: animeBg 4s linear infinite;
+}
+@-webkit-keyframes animeBg {
+	0% {
+		transform: translateY(0)
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-2000%)
+	}
+}
+@keyframes animeBg {
+	0% {
+		transform: translateY(0)
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}	
+	100% {
+		transform: translateY(-2000%)
+	}
+}
+.page i:nth-child(even) {
+	background: transparent;
+	-webkit-box-shadow: 0px 0px 0px #000000;
+	   box-shadow: 0px 0.4px 0px #ffc60a, 0px 0.8px 0px #ffc60a, 0px 1px 0px #ffc60a, 0px 1.4px 0px #ffc60a;;
+}
+/* --------------------  Page --Конец--  -------------------- */
+
+@media (max-width: 767px){
+	.page__section::after {
+		position: absolute;
+		left: 35%;
+		height: 75%;
+	}
+	.page__section {
+		width: 70vw;
+		height: 70vw;
+	}
+	.page__body_title {
+		font-size: 1.2em;
+	}
+@supports (-webkit-appearance:none){}
+}

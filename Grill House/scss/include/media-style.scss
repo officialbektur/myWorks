@@ -1,0 +1,17 @@
+@import "_var";
+@import "_MinWidth_767";
+@import "../_MaxWidth_1200";
+@media screen and (max-width: 1024px) {
+	.menu__column {
+		width: 90%;
+	}
+}
+/* =============================================  For Mobile  --Start--  ============================================= */
+@import "_MaxWidth_767";
+@media screen and (max-width: 460px) {
+	.menu__column {
+		max-width: 80%;
+	}
+}
+@import "_MaxWidth_360";
+/* =============================================  For Mobile  --End--  ============================================= */

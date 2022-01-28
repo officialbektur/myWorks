@@ -1,0 +1,232 @@
+/* ===================================  Max Width  --Start--  =================================== */
+@media screen and (max-width: $mw){
+	/* ===================================  Logo  --Start--  =================================== */
+	.header__logo {
+		&_title {
+			font-size: calc(20px + (34 - 20) * ((100vw - 767px) / (1200 - 767)));
+		}
+		&_subtitle {
+			font-size: calc(8px + (15 - 8) * ((100vw - 767px) / (1200 - 767)));
+		}
+	}
+	/* ===================================  Logo  --End--  =================================== */
+	.menu__link {
+		padding: 5px calc(15px + (20 - 15) * ((100vw - 767px) / (1200 - 767)));
+		font-size: calc(12px + (17 - 12) * ((100vw - 767px) / (1200 - 767)));
+	}
+	._title {
+		font-size: calc(38px + (44 - 38) * ((100vw - 767px) / (1200 - 767)));
+	}
+	._texts {
+		font-size: calc(15px + (18 - 15) * ((100vw - 767px) / (1200 - 767)));
+	}
+	._button {
+		button {
+			font-size: calc(20px + (29 - 20) * ((100vw - 767px) / (1200 - 767)));
+		}
+	}
+	/* ===================================  Hi  --Start--  =================================== */
+	.hi {
+		&__body {
+			height: calc(520px + (660 - 520) * ((100vw - 767px) / (1200 - 767)));
+		}
+		&__title {
+			a:first-child {
+				font-size: calc(44px + (72 - 44) * ((100vw - 767px) / (1200 - 767)));
+			}
+			a:last-child {
+				font-size: calc(14px + (20 - 14) * ((100vw - 767px) / (1200 - 767)));
+			}
+		}
+		&__image {
+			&_img {
+				max-width: 70%;
+			}
+		}
+	}
+	/* ===================================  Hi  --End--  =================================== */
+	/* ===================================  Order  --Start--  =================================== */
+	.order {
+		&__column {
+			&:first-child {
+				padding-right: calc(0px + (40 - 0) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&:last-child {
+				.order__title  {
+					padding-top: calc(12px + (18 - 12) * ((100vw - 767px) / (1200 - 767)));
+					padding-bottom: calc(12px + (18 - 12) * ((100vw - 767px) / (1200 - 767)));
+					padding-left: calc(26px + (33 - 26) * ((100vw - 767px) / (1200 - 767)));
+					font-size: calc(22px + (34 - 22) * ((100vw - 767px) / (1200 - 767)));
+					span {
+						font-size: calc(22px + (34 - 22) * ((100vw - 767px) / (1200 - 767)));
+					}
+				}
+			}
+		}
+		&__title {
+			span:first-child {
+				font-size: calc(25px + (35 - 25) * ((100vw - 767px) / (1200 - 767)));
+			}
+			span:last-child {
+				font-size: calc(30px + (50 - 30) * ((100vw - 767px) / (1200 - 767)));
+				line-height: 125%;
+			}
+		}
+		&__texts {
+			padding-right:calc(4px + (34 - 4) * ((100vw - 767px) / (1200 - 767)));
+		}
+	}
+	/* ===================================  Order  --End--  =================================== */
+	/* ===================================  Our  --Start--  =================================== */
+	.our {
+		&__column {
+			&_info {
+				padding: 0px calc(12px + (35 - 12) * ((100vw - 767px) / (1200 - 767)));	
+			}
+			&_title {
+				font-size: calc(18px + (30 - 18) * ((100vw - 767px) / (1200 - 767)));
+				line-height: 120%;
+			}
+			&_price {
+				font-size: calc(24px + (44 - 24) * ((100vw - 767px) / (1200 - 767)));
+			}
+		}
+	}
+	/* ===================================  Our  --End--  =================================== */
+	/* ===================================  Blog  --Start--  =================================== */
+	.blog {
+		&__title {
+			span {
+				&:first-child {
+					font-size: calc(28px + (35 - 28) * ((100vw - 767px) / (1200 - 767)));
+				}
+				&:last-child {
+					font-size: calc(35px + (44 - 35) * ((100vw - 767px) / (1200 - 767)));
+				}
+			}
+		}
+		&__column {
+			&:nth-child(2) &_content {
+				padding-left: calc(0px + (100 - 0) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&:nth-child(4) &_content {
+				padding-left: calc(0px + (100 - 0) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_content {
+				padding-right: calc(0px + (100 - 0) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_icon {
+				padding: calc(22px + (25.5 - 22) * ((100vw - 767px) / (1200 - 767)));
+				margin-right: calc(15px + (31 - 15) * ((100vw - 767px) / (1200 - 767)));
+				font-size: calc(26px + (30 - 26) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_title {
+				font-size: calc(22px + (25 - 22) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_texts {
+				padding-top: calc(10px + (20 - 10) * ((100vw - 767px) / (1200 - 767)));
+				padding-right: calc(0px + (6 - 0) * ((100vw - 767px) / (1200 - 767)));
+				font-size: calc(16px + (18 - 16) * ((100vw - 767px) / (1200 - 767)));
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+	/* ===================================  Blog  --End--  =================================== */
+	/* ===================================  Download  --Start--  =================================== */
+	.download {
+		&__title {
+			span {
+				&:first-child {
+					font-size: calc(28px + (35 - 28) * ((100vw - 767px) / (1200 - 767)));
+				}
+				&:last-child {
+					font-size: calc(35px + (44 - 35) * ((100vw - 767px) / (1200 - 767)));
+				}
+			}
+		}
+		&__column {
+			&:first-child {
+				padding-top: calc(30px + (38 - 30) * ((100vw - 767px) / (1200 - 767)));
+				padding-right: calc(0px + (156 - 0) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_title {
+				font-size: calc(22px + (25.5 - 22) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_texts {
+				padding-right: calc(48px + (78 - 48) * ((100vw - 767px) / (1200 - 767)));
+				span {
+					display: none;
+				}
+			}
+		}
+	}
+	/* ===================================  Download  --End--  =================================== */
+	/* ===================================  Order Now  --Start--  =================================== */
+	.ordernow {
+		&__title {
+			span {
+				&:first-child {
+					font-size: 35px;
+				}
+				&:last-child {
+					font-size: 44px;
+				}
+			}
+		}
+		&__column {
+			&:first-child {
+				margin-right: calc(20px + (32 - 20) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_content {
+				padding-top: calc(24px + (38 - 24) * ((100vw - 767px) / (1200 - 767)));
+				padding-bottom: calc(24px + (30 - 24) * ((100vw - 767px) / (1200 - 767)));
+				padding-left: calc(30px + (47 - 30) * ((100vw - 767px) / (1200 - 767)));
+				padding-right: calc(30px + (47 - 30) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_avatar {
+				max-width: calc(60px + (120 - 60) * ((100vw - 767px) / (1200 - 767)));
+			}
+			&_title {
+				span {
+					&:first-child {
+						font-size: calc(18px + (25 - 18) * ((100vw - 767px) / (1200 - 767)));
+					}
+					&:last-child {
+						font-size: calc(14px + (18 - 14) * ((100vw - 767px) / (1200 - 767)));
+					}
+				}
+			}
+		}
+	}
+	/* ===================================  Order Now  --End--  =================================== */
+	/* ===================================  Contacts  --Start--  =================================== */
+	.contacts {
+		&__title {
+			font-size: calc(28px + (35 - 28) * ((100vw - 767px) / (1200 - 767)));
+		}
+		&__number {
+			font-size: calc(60px + (76 - 60) * ((100vw - 767px) / (1200 - 767)));
+		}
+	}
+	/* ===================================  Contacts  --End--  =================================== */
+	/* ===================================  Footer  --Start--  =================================== */
+	.footer {
+		&__column {
+			&_title {
+				font-size: calc(20px + (25 - 20) * ((100vw - 767px) / (1200 - 767)));
+			}
+		}
+		&__programs_title {
+			span {
+				font-size: calc(16px + (20 - 16) * ((100vw - 767px) / (1200 - 767)));
+			}
+			li {
+				font-size: calc(25px + (30 - 25) * ((100vw - 250px) / (1200 - 250)));
+			}
+		}
+	}
+	/* ===================================  Footer  --End--  =================================== */
+}
+/* ===================================  Max Width  --End--  =================================== */

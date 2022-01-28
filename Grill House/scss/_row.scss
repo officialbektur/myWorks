@@ -1,0 +1,133 @@
+/* ===================================  Row  --Start--  =================================== */
+.page__row {
+	padding-top: 50px;
+	&_content {
+		padding: 30px 100px;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		background-size: cover;
+		background-position: center;
+	}
+	&_ibg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	&_column {
+		max-width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		&:last-child {
+			flex: 0 0 100%;
+		}
+		&:nth-child(2) {
+			overflow: hidden;
+			img {
+				transform: translate(0px, 770px);
+				transition: all 0.6s ease 0s;
+			}
+			&._active img {
+				transform: translate(0px, 0px);
+			} 
+		}
+	}
+	&_block {
+		display: flex;
+	}
+	&_texts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&_text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		overflow: hidden;
+		span {
+			color: $colorYelow;
+			font-size: 46px;
+			font-weight: 400;
+			line-height: 120%;
+			white-space: nowrap;
+			&:nth-child(1) {
+				transform: translate(-330px, 0px);
+				transition: all 0.6s ease 0s;
+			}
+			&:nth-child(2) {
+				font-weight: 700;
+				transform: translate(-330px, 0px);
+				transition: all 0.9s ease 0s;
+			}
+			&:nth-child(3) {
+				transform: translate(-330px, 0px);
+				transition: all 1.2s ease 0s;
+			}
+			&:nth-child(4) {
+				padding: 10px 0px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				transform: translate(0px, 320px);
+				transition: all 1.2s ease 0s;
+			}
+			a {
+				padding: 10px 24px;
+				color: $bgcolor;
+				font-size: 22px;
+				font-weight: 700;
+				line-height: 100%;
+				background-color: $colorYelow;
+				transition: all 0.6s ease 0s;
+				&:hover {
+					background-color: $colorYelow2;
+				}
+			}
+		}
+		&._active span:nth-child(1) {
+			transform: translate(0px, 0px);
+		} 
+		&._active span:nth-child(2) {
+			transform: translate(0px, 0px);
+		} 
+		&._active span:nth-child(3) {
+			transform: translate(0px, 0px);
+		} 
+		&._active span:nth-child(4) {
+			transform: translate(0px, 0px);
+		} 
+	}
+	.row__logos {
+		padding-top: 25%;
+		overflow: hidden;
+		&_content {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			transform: translate(0px, 370px);
+			transition: all 0.8s ease 0s;
+		}
+		&._active .row__logos_content {
+			transform: translate(0px, 0px);
+		} 
+		&_icon {
+			max-width: 110px;
+		}
+		&_title {
+			padding-top: 16px;
+			font-size: 25px;
+			text-shadow: 1px 2px 6px $colorBlack, 
+						1px 4px 8px $colorBlack, 
+						1px 6px 10px $colorBlack;
+		}
+	}
+	
+}
+/* ===================================  Row  --End--  =================================== */

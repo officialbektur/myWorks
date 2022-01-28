@@ -1,0 +1,19 @@
+/* ===================================  Logo  --Start--  =================================== */
+.header__logo {
+	position: relative;
+	max-width: 150px;
+	z-index: 91;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	overflow: hidden;
+	&_icon {
+		transform: translate(-170px, 0px);
+		transition: all 0.8s ease 0s;
+		.header._active & {
+			transform: translate(0px, 0px);
+		} 
+	}
+}
+/* ====================  Logo Icon  ==================== */
+
+/* ===================================  Logo  --End--  =================================== */

@@ -1,0 +1,109 @@
+/* ===================================  Footer  --Start--  =================================== */
+.footer {
+	padding: 50px 0px;
+	&__body {
+		overflow: hidden;
+		&._active .footer__logos{
+			transform: translate(0px, 0px);
+		}
+	}
+	&__logos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transform: translate(0px, -320px);
+		transition: all 0.8s ease 0s;
+		&_icon {
+			max-width: 180px;
+		}
+		&_title {
+			padding-top: 22px;
+			font-size: 36px;
+			text-shadow: 1px 2px 6px $colorBlack, 
+						1px 4px 8px $colorBlack, 
+						1px 6px 10px $colorBlack;
+		}
+	}
+	&__content {
+		padding: 40px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		&._active &_column:nth-child(1) {
+			transform: translate(0px, 0px);
+		}
+		&._active &_column:nth-child(2) {
+			transform: translate(0px, 0px);
+		}
+		&_column {
+			padding: 0px 10px;
+			width: auto;
+			&:nth-child(1) {
+				text-align: center;
+				transform: translate(-120%, 0px);
+				transition: all 0.8s ease 0s;
+			}
+			&:last-child {
+				padding: 0px 50px;
+				transform: translate(120%, 0px);
+				transition: all 0.8s ease 0s;
+			}
+			.block__yellow_title {
+				padding: 10px 65px;
+				font-size: 30px;
+				font-weight: 900;
+			}
+			.block__yellow_text {
+				font-size: 30px;
+				border-width: 3px;
+				li {
+					line-height: 140%;
+				}
+			}
+		}
+	}
+	&__menu {
+		display: flex;
+		&_list {
+			padding: 0px 40px;
+			a {
+				font-size: 28px;
+				font-weight: 300;
+				line-height: 200%;
+				cursor: pointer;
+			}
+		}
+	}
+	&__author {
+		padding: 0px 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+		&._active &_column:nth-child(1) {
+			transform: translate(0px, 0px);
+		}
+		&._active &_column:last-child {
+			transform: translate(0px, 0px);
+		}
+		&_column {
+			font-size: 38px;
+			font-weight: 300;
+			&:nth-child(1) {
+				transform: translate(-120%, 0px);
+				transition: all 1s ease 0s;
+			}
+			&:last-child {
+				text-align: end;
+				transform: translate(120%, 0px);
+				transition: all 1s ease 0s;
+				a {
+					padding: 0px 8px;
+					color: $colorYelow;
+				}
+			}
+		}
+	}
+}
+/* ===================================  Footer  --End--  =================================== */

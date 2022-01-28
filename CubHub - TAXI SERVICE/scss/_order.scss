@@ -1,0 +1,179 @@
+/* ===================================  Order  --Start--  =================================== */
+.order {
+	background-color: $colorYellow1;
+	&__body {
+		padding: 140px 0px 40px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		max-width: 50%;
+		overflow: hidden;
+		&_contact {
+			transform: translate(220%, 0px);
+			transition: all 1s ease 0s;
+			.order__column._active & {
+				transform: translate(0px, 0px);
+			}
+		}
+		&:first-child {
+			padding-right: 40px;
+		}
+		&:last-child {
+			display: flex;
+			justify-content: end;
+			width: 100%;
+			overflow: hidden;
+			.order__title  {
+				padding: 18px 0px 18px 33px;
+				color: $colorWhite;
+				font-size: 34px;
+				flex-direction: row;
+				align-items: center;
+				background-color: $colorBlack6;
+				transform: translate(0px, 0px);
+				span {
+					color: $colorYellow2;
+					font-size: 34px;
+				}
+			}
+			.order__button {
+				padding: 48px 0px 20px;
+				width: 100%;
+				button {
+					width: 100%;
+					background-color: $colorBlack4;
+				}
+			}
+		}
+		&_contact {
+			max-width: 422px;
+			width: 100%;
+		}
+	}
+	&__form {
+		padding: 0px 22px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-color: $colorWhite;
+		&_content {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			background: $colorWhite;
+		}
+		&_column { 
+			max-width: 50%;
+			width: 100%;
+			&:first-child {
+				padding-right: 10px;
+			}
+			&:nth-child(2) {
+				padding-left: 10px;
+				.order__form_input label {
+					color: $colorWhite5;
+				}
+			}
+		}
+		&_input {
+			padding: 38px 0px;
+			width: 100%;
+			height: 46px;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			-webkit-tap-highlight-color: $clickByTouchColor1;
+			input {
+				padding: 19px 0px;
+				width: 100%;
+				height: 100%;
+				font-size: 18px;
+				color: $colorBlack;
+				&:focus ~ .order__form_label span,
+				&:valid ~ .order__form_label span {
+					color: $colorYellow1;
+					transform: translateY(-150%);
+				}
+				&:focus ~ .order__form_label::after,
+				&:valid ~ .order__form_label::after {
+					transform: translateX(0px);
+				}
+			}
+			label {
+				position: absolute;
+				bottom: 4px;
+				left: 0px;
+				width: 100%;
+				height: 100%;
+				color: $colorBlack;
+				font-size: 20px;
+				font-weight: 600;
+				pointer-events: none;
+				border-bottom: solid 2px $colorWhite5;
+				&::after {
+					content: "";
+					position: absolute;
+					bottom: -3px;
+					left: 0px;
+					width: 100%;
+					height: 100%;
+					border-bottom: solid 3px $colorYellow1;
+					transform: translateX(-100%);
+					transition: transform 0.3s ease 0s;
+				}
+				span {
+					position: absolute;
+					bottom: 4px;
+					left: 0;
+					transition: all 0.3s ease 0s;
+				}
+			}
+		}
+	}
+	&__title {
+		color: $colorBlack;
+		overflow: hidden;
+		&_content {
+			display: flex;
+			flex-direction: column;
+			transform: translate(-220%, 0px);
+			transition: all 1s ease 0s;
+			.order__column:first-child .order__title._active & {
+				transform: translate(0px, 0px);
+			}
+		}
+		span:first-child {
+			font-size: 35px;
+		}
+		span:last-child {
+			font-size: 50px;
+			line-height: 125%;
+		}
+	}
+	&__texts {
+		padding: 26px 34px 26px 0px;
+		color: $colorBlack2;
+		font-size: 18px;
+		font-weight: 400;
+		&_content {
+			transform: translate(-200%, 0px);
+			transition: all 1.2s ease 0s;
+			.order__column:first-child .order__texts._active & {
+				transform: translate(0px, 0px);
+			}
+		}
+	}
+	&__button {
+		padding-top: 32px;
+	}
+	&__column:first-child &__button button {
+		transform: translate(-200%, 0px);
+		transition: all 1.4s ease 0s;
+	}
+	&__column:first-child &__button._active button {
+		transform: translate(0px, 0px);
+	}
+}
+/* ===================================  Order  --End--  =================================== */

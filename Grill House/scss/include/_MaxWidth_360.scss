@@ -1,0 +1,44 @@
+/* ===================================  Max-Width 360px  --Start--  =================================== */
+@media screen and (max-width: 360px) {
+	.menu__list {
+		margin: 0px 2px;
+	}
+	.menu__column {
+		padding: 16px calc(4px + (12 - 4) * ((100vw - 250px) / (360 - 250)));
+		max-width: 100%;
+	}
+	.hi__content_img img {
+		height: 50%;
+	}
+	.page__row_column{
+		&:nth-child(2) {
+			max-width: 75%;
+		}
+	}
+	.up__button_icon {
+		width: 54px;
+		height: 54px;
+	}
+	.page__our{
+		&_body {
+			padding-top: 25px;
+			flex-direction: column;
+		}
+		&_block {
+			padding: 0px 32px;
+		}
+		&_column {
+			max-width:100%;
+			&:last-child {
+				padding-top: 30px;
+			}
+			img:nth-child(1){
+				max-width: 55%;
+			}
+		}
+	}
+	.footer__content_column:nth-child(1) {
+		max-width: 100%;
+	}
+}
+/* ===================================  Max-Width 360px  --End--  =================================== */

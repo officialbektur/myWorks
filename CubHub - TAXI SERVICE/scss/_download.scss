@@ -1,0 +1,101 @@
+/* ===================================  Download  --Start--  =================================== */
+.download {
+	background-color: $colorWhite;
+	&__body {
+		padding-top: 65px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		overflow: hidden;
+		&_content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			transform: translate(0px, 220%);
+			transition: all 1s ease 0s;
+			.download__title._active & {
+				transform: translate(0px, 0px);
+			}
+		}
+		span {
+			&:first-child {
+				color: $colorYellow1;
+				font-size: 35px;
+				line-height: 100%;
+			}
+			&:last-child {
+				color: $colorBlack;
+				font-size: 44px;
+			}
+		}
+	}
+	&__rows {
+		padding-top: 34px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		max-width: 50%;
+		height: 466px;
+		overflow: hidden;
+		&:first-child {
+			padding-top: 38px;
+			padding-right: 156px;
+		}
+		&:last-child {
+			width: 100%;
+		}
+		&_title {
+			color: $colorBlack;
+			font-size: 25.5px;
+			text-transform: none;
+			overflow: hidden;
+			&-content {
+				display: flex;
+				flex-direction: column;
+				transform: translate(-220%, 0px);
+				transition: all 1s ease 0s;
+				.download__column_title._active & {
+					transform: translate(0px, 0px);
+				}
+			}
+		}
+		&_texts {
+			padding: 26px 0px;
+			padding-right: 80px;
+			color: $colorBlack3;
+			font-size: 18px;
+			overflow: hidden;
+			&-content {
+				transform: translate(-220%, 0px);
+				transition: all 1s ease 0s;
+				.download__column_texts._active & {
+					transform: translate(0px, 0px);
+				}
+			}
+			span {
+				display: inline-block;
+			}
+		}
+	}
+	&__links {
+		padding-top: 36px;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
+		&_column {
+			max-width: 50%;
+			width: 100%;
+			transform: translate(0px, 220%);
+			transition: all 1s ease 0s;
+			.download__links._active & {
+				transform: translate(0px, 0px);
+			}
+			&:first-child {
+				padding-right: 20px;
+			}
+		}
+	}
+}
+/* ===================================  Download  --End--  =================================== */

@@ -1,0 +1,40 @@
+/* =============================================  Scroll Up Button  --Start--  ============================================= */
+.up__button {
+	position: fixed;
+    bottom: 6%;
+    right: 12px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 80;
+    cursor: pointer;
+	-webkit-tap-highlight-color: rgba(219, 185, 79, 0.25);
+	transition: all 0.4s ease 0s;
+	&._active {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.up__button_icon {
+	width: 54px;
+	height: 54px;
+	background: #dadada;
+    box-shadow: 0px 0px 2px 0px #b8b8b8,0px 0px 4px 0px #b8b8b8,0px 0px 6px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8;
+	transition: all 0.4s ease-in-out 0s;
+	position: relative;
+	body._pc &:hover {
+		box-shadow: 0px 0px 5px 0px #b8b8b8,0px 0px 7px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8,0px 0px 13px 0px #b8b8b8;
+	}
+	body._mobile &:active {
+		box-shadow: 0px 0px 5px 0px #b8b8b8,0px 0px 7px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8,0px 0px 13px 0px #b8b8b8;
+	}
+	& span {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transform: rotate(180deg);
+	}
+}
+/* =============================================  Scroll Up Button  --End--  ============================================= */

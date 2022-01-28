@@ -1,0 +1,136 @@
+/* =============================================  Popup  --Start--  ============================================= */
+.popup__info {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background-color: rgba(1, 1, 1, 0.7);
+    -webkit-tap-highlight-color: transparent;
+	z-index: 9999999999999999999999;
+	transition: all 0.6s ease 0s;
+	cursor: pointer;
+	&._active {
+    opacity: 1;
+    visibility: visible;
+	}
+	&_content {
+		position: relative;
+		padding: 8px;
+		margin: 0px 12px;
+		width: 800px;
+		height: 420px;
+		background-color: #000000;
+		border: solid 1px #fffdfd36;
+		overflow: hidden;
+		cursor: auto;
+	}
+}
+/* ===================================  Popup Back Icon  --Start--  =================================== */
+.back {
+	&__info {
+		&_header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 20px;
+			background-color: #000000;
+			z-index: 10000000;
+		}
+		&_icons {
+			position: absolute;
+			top: 6px;
+			right: 6px;
+			z-index: 9999999999999999;
+			width: 20px;
+			height: 20px;
+			-webkit-tap-highlight-color: transparent;
+			cursor: pointer;
+		}		
+	}
+	&__icon {
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			height: 3px;
+			width: 100%;
+			-webkit-transition: all .5s ease 0s;
+			-o-transition: all .5s ease 0s;
+			transition: all .5s ease 0s;
+			background-color: #ffffff;
+			z-index: 12222222222222222222222222222222222222;
+		}
+		&::before {
+			top: 50%;
+			-webkit-transform: rotate(-45deg) translate(0px, -75%);
+				-ms-transform: rotate(-45deg) translate(0px, -75%);
+					transform: rotate(-45deg) translate(0px, -75%);
+			.back__icons._active & {
+				-webkit-transform: rotate(45deg) translate(0px, -75%);
+					-ms-transform: rotate(45deg) translate(0px, -75%);
+						transform: rotate(45deg) translate(0px, -75%);
+			}
+		}
+		&::after {
+			bottom: 50%;
+			-webkit-transform: rotate(45deg) translate(0px, 75%);
+				-ms-transform: rotate(45deg) translate(0px, 75%);
+					transform: rotate(45deg) translate(0px, 75%);
+			.back__icons._active & {
+				-webkit-transform: rotate(-45deg) translate(0px, 75%);
+					-ms-transform: rotate(-45deg) translate(0px, 75%);
+						transform: rotate(-45deg) translate(0px, 75%);
+			}
+		}
+	}
+}
+/* ===================================  Popup Back Icon  --End--  =================================== */
+.popup__body {
+	position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+	&_info {
+		padding: 8px 2px 40px;
+		color: #ffffff;
+		font-weight: bold;
+	}
+}
+/* ===================================  Popup Contact  --Start--  =================================== */
+.popup__body_contact {
+	flex: 1 1 100%;
+	overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	li {
+		padding: 8px 4px;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		font-size: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&::before {
+			padding: 0px 6px;
+		}
+	}
+}
+/* ===================================  Popup Contact  --End--  =================================== */
+/* =============================================  Popup  --End--  ============================================= */

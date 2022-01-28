@@ -1,0 +1,76 @@
+/* ===================================  Header  --Start--  =================================== */
+.header {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 90;
+	background-color: #262626;
+	&__menu {
+		position: relative;
+		z-index: -1;
+	}
+	body._minWindowScreen250 & {
+		position: relative;
+	}
+}
+.header__body {
+	padding: 10px 20px;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	min-height: 70px;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+/* ===================================  Menu body  --Start--  =================================== */
+@import "_header__logo";// ====================  here Logo  ==================== //
+/* ====================  Hide burger icon menu for PC  ==================== */
+.menu__icon {
+	display: none;
+}
+/* ====================  Menu list  ==================== */
+.menu__list {
+	margin-left: 100px;
+	border: solid 2px $colorYelow;
+	> li {
+		padding: 22px 64px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all 0.5s ease 0s;
+		&:nth-child(1) {
+			margin: 0px 0px;
+		}
+		body._pc &:hover {
+			background: $colorYelow;
+		}
+		body._pc &:hover .menu__link {
+			color: $bgcolor;
+			font-weight: 700;
+		}
+		body._mobile & {
+			flex: 1 1 auto;
+			-webkit-tap-highlight-color: rgba(219, 185, 79, 0.25);
+		}
+	}
+}
+.menu__link {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $colorYelow;
+	font-size: 1.2em;
+	font-weight: 400;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	transition: all 0.5s ease 0s;
+}
+/* ===================================  Menu body  --End--  =================================== */
+/* ===================================  Header  --End--  =================================== */

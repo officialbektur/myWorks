@@ -1,0 +1,13 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	background-color: #262626;
+	overflow-x: hidden;
+	overflow-y: auto;
+	&._lock {
+		overflow-y: hidden;
+	}
+	&._minWindowScreen250 {
+		overflow: auto;
+	}
+}

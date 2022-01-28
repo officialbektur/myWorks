@@ -1,0 +1,31 @@
+/* ===================================  Contacts  --Start--  =================================== */
+.contacts {
+	background-color: $colorYellow1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	&__body {
+		padding: 70px 0px 95px;
+		overflow: hidden;
+	}
+	&__title {
+		color: $colorBlack;
+		font-size: 35px;
+		transform: translate(-220%, 0px);
+		transition: all 1s ease 0s;
+		.contacts__body._active & {
+			transform: translate(0px, 0px);
+		}
+	}
+	&__number {
+		color: $colorBlack;
+		font-size: 76px;
+		transform: translate(-220%, 0px);
+		transition: all 1.4s ease 0s;
+		.contacts__body._active & {
+			transform: translate(0px, 0px);
+		}
+	}
+}
+/* ===================================  Contacts  --End--  =================================== */

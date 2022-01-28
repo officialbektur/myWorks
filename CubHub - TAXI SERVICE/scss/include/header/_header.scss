@@ -1,0 +1,66 @@
+/* ===================================  Header  --Start--  =================================== */
+.header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 90;
+	transition: all 0.2s ease 0s;
+	&._scrollActive {
+		background-color: $bgcolor2;
+	}
+	&__menu {
+		position: relative;
+		z-index: -1;
+	}
+	body._minWindowScreen250 & {
+		position: relative;
+	}
+}
+.header__body {
+	padding: 21px 6px;
+	min-height: 70px;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 99;
+	overflow: hidden;
+}
+@import "_header__logo";// ====================  here Logo  ==================== //
+/* ===================================  Menu body  --Start--  =================================== */
+/* ====================  Hide burger icon menu for PC  ==================== */
+.menu__icon {
+	display: none;
+}
+/* ====================  Menu list  ==================== */
+.menu__list > li {
+	position: relative;
+	padding: 0px 2px;
+	display: flex;
+	text-align: center;
+}
+.menu__link {
+	padding: 5px 20px;
+	width: 100%;
+	color: $colorWhite;
+	font-size: 17px;
+	line-height: 120%;
+	font-weight: 900;
+	text-transform: uppercase;
+	border-radius: 50px;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	-webkit-tap-highlight-color: $clickByTouchColor;
+	transition: all 0.5s ease 0s;
+	&._activeLink {
+		color: $colorBlack2;
+		background-color: $colorYellow1;
+	}
+	body._pc &:hover {
+		text-shadow: 0px 0px 16px $colorYellow2;
+	}
+}
+/* ===================================  Menu body  --End--  =================================== */
+/* ===================================  Header  --End--  =================================== */

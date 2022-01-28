@@ -1,0 +1,44 @@
+/* ===================================  Max-Width 500px  --Start--  =================================== */
+@media screen and (max-width: 500px) {
+	/* ===================================  Our  --Start--  =================================== */
+	.our {
+		&__column {
+			&_info {
+				padding: 0px calc(12px + (52 - 12) * ((100vw - 250px) / (500 - 250)));	
+			}
+			&_star {
+				width: calc(90px + (120 - 90) * ((100vw - 250px) / (500 - 250)));
+				height: calc(90px + (120 - 90) * ((100vw - 250px) / (500 - 250)));
+    			right: calc(-46px + (30 - 46) * ((100vw - 250px) / (500 - 250)));
+				bottom: calc(-46px + (30 - 46) * ((100vw - 250px) / (500 - 250)));
+				&::before {
+					top: 37%;
+					left: 10%;
+					font-size: calc(18px + (26 - 18) * ((100vw - 250px) / (500 - 250)));
+				}
+			}
+			margin-left:calc(4px + (30 - 4) * ((100vw - 250px) / (500 - 250)));
+			margin-right:calc(4px + (30 - 4) * ((100vw - 250px) / (500 - 250)));
+			max-width: 100%;
+			&:nth-child(2) {
+				margin-left:calc(4px + (30 - 4) * ((100vw - 250px) / (500 - 250)));
+				margin-right:calc(4px + (30 - 4) * ((100vw - 250px) / (500 - 250)));
+			}
+		}
+	}
+	/* ===================================  Our  --End--  =================================== */
+	.blog__column_content {
+		flex-direction: column;
+		align-content: center;
+		text-align: center;
+	}
+	.blog__column_info {
+		padding-top: 20px;
+	}
+
+
+	.footer__column {
+		max-width: 80%;
+	}
+}
+/* ===================================  Max-Width 500px  --End--  =================================== */

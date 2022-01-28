@@ -1,0 +1,512 @@
+/* ===================================  For PC  --Start--  =================================== */
+@media screen and (min-width: 768px) {
+	.menu__list {
+		display: -webkit-box;
+			display: -ms-flexbox;
+				display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.menu__list > li {
+		padding: 10px 0px;
+	}
+	.menu__link._activeLink::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 4px;
+		bottom: 0;
+		left: 0%;
+		border-radius: 4px;
+		background-color: #f1cdb3;
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  For PC  --End--  =================================== */
+
+/* ===================================  Max-Width 1200px  --Start--  =================================== */
+@media screen and (max-width: 1200px) {
+	/* ====================  _title  ==================== */
+	._title {
+		font-size: calc(24px + (35 - 24) * ((100vw - 320px) / (1200 - 320)));
+	}
+	/* ====================  _text  ==================== */
+	._text {
+		font-size: calc(13px + (15 - 13) * ((100vw - 320px) / (1200 - 320)));
+		line-height: 170%;
+	}
+	/* ====================  _button__more_text  ==================== */
+	._button__more_text {
+		font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (1200 - 320)));
+	}
+	/* ===================================  Hi  --Start--  =================================== */
+	.hi__title {
+		font-size: calc(28px + (45 - 28) * ((100vw - 320px) / (1200 - 320)));
+	}
+	.hi__text {
+		margin-top: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));
+		margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (1200 - 320)));
+	}
+	/* ===================================  Hi  --End--  =================================== */
+	/* ===================================  Our  --Start--  =================================== */
+	.our__column_button ._button__more_text {
+		padding-top: calc(8px + (6 - 8) * ((100vw - 320px) / (1200 - 320)));
+		padding-right: calc(36px + (28 - 36) * ((100vw - 320px) / (1200 - 320)));
+		padding-bottom: calc(8px + (7 - 8) * ((100vw - 320px) / (1200 - 320)));
+		padding-left: calc(36px + (28 - 36) * ((100vw - 320px) / (1200 - 320)));
+		font-size: calc(18px + (17 - 18) * ((100vw - 320px) / (1200 - 320)));
+	}
+	.our__button ._button__more_text {
+		padding-top: calc(10px + (14 - 10) * ((100vw - 320px) / (1200 - 320)));
+		padding-right: calc(32px + (48 - 32) * ((100vw - 320px) / (1200 - 320)));
+		padding-bottom: calc(10px + (14 - 10) * ((100vw - 320px) / (1200 - 320)));
+		padding-left: calc(32px + (48 - 32) * ((100vw - 320px) / (1200 - 320)));
+		font-size: calc(18px + (17 - 18) * ((100vw - 320px) / (1200 - 320)));
+		text-align: center;
+	}
+	/* ===================================  Our  --End--  =================================== */
+	/* ===================================  To help the shelter  --Start--  =================================== */
+	.help__column_title {
+		font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+	}
+	/* ===================================  To help the shelter  --End--  =================================== */
+	/* ===================================  Contacts  --End--  =================================== */
+	.contact__card_info {
+		font-size: calc(10px + (25 - 10) * ((100vw - 320px) / (1200 - 320)));
+	}
+	/* ===================================  Contacts  --End--  =================================== */
+	/* ===================================  Footer  --Start--  =================================== */
+	.footer__title {
+		font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1200 - 320)));
+	}
+	.footer__link {
+		font-size: calc(13px + (20 - 13) * ((100vw - 320px) / (1200 - 320)));
+	}
+	/* ===================================  Footer  --End--  =================================== */
+	 /* ===================================  Popup Our Button  --Start--  =================================== */
+	 .popup__our_column .our__column_title {
+        line-height: 100%;
+    }
+    .popup__our_column .our__column_button ._button__more_text {
+		padding: 10px 16px;
+		line-height: 0%;
+    }
+    /* ===================================   Popup Our Button  --End--  =================================== */
+	@supports (-webkit-appearance:none){}
+}
+/* ===================================  Max-Width 767px  --End--  =================================== */
+
+
+@media screen and (max-width: 1000px){
+	.footer__column {
+		max-width: 40%;
+		width: 100%;
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  For Mobile  --Start--  =================================== */
+/* ===================================  Max-Width 767px  --Start--  =================================== */
+@media screen and (max-width: 767px) {
+	/* ====================  NoScrript  --Start--  ==================== */
+	.noscript__text {
+		font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (767 - 320)));
+	}
+	/* ====================  NoScrript  --Start--  ==================== */
+	/* ===================================  Menu Burger  --Start--  =================================== */
+	/* ====================  Burger menu icon  --Start--  ==================== */
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 38px;
+		height: 22px;
+		cursor: pointer;
+		-webkit-tap-highlight-color: rgba(95,80,70, 0.5);
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		-webkit-transition: all .3s ease 0s;
+		-o-transition: all .3s ease 0s;
+		transition: all .3s ease 0s;
+		background-color: #ffffff;
+		-webkit-box-shadow: 0px 0px 3px #ffffff;
+		        box-shadow: 0px 0px 3px #ffffff;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0px;
+	}
+	.menu__icon::after {
+		bottom: 0px;
+	}
+	.menu__icon span {
+		top: 50%;
+		-webkit-transform: scale(1) translate(0px, -50%);
+		    -ms-transform: scale(1) translate(0px, -50%);
+		        transform: scale(1) translate(0px, -50%);
+	}
+	/* ====================  Burger menu icon on click  ==================== */
+	.menu__icon._active span{
+		-webkit-transform: scale(0);
+		    -ms-transform: scale(0);
+		        transform: scale(0);
+	} 
+	.menu__icon._active::before {
+		top: 50%;
+		-webkit-transform: rotate(-45deg) translate(0px, -50%);
+		    -ms-transform: rotate(-45deg) translate(0px, -50%);
+		        transform: rotate(-45deg) translate(0px, -50%)
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		-webkit-transform: rotate(45deg) translate(0px, 50%);
+		    -ms-transform: rotate(45deg) translate(0px, 50%);
+		        transform: rotate(45deg) translate(0px, 50%)
+	}
+	/* ====================  Burger menu icon  --End--  ==================== */
+
+	/* ====================  Menu body  --Start--  ==================== */
+	.menu__body {
+		position: fixed;
+		top: 0px;
+		right: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		padding: 100px 30px 30px;
+		-webkit-transition: all 0.6s ease 0s;
+		-o-transition: all 0.6s ease 0s;
+		transition: all 0.6s ease 0s;
+		overflow-y: auto;
+	}
+	.menu__body:before {
+		content: "";
+		position: fixed;
+		top: 0px;
+		right: -100%;
+		width: 100%;
+		z-index: 10000;
+		-webkit-transition: all 0.6s ease 0s;
+		-o-transition: all 0.6s ease 0s;
+		transition: all 0.6s ease 0s;
+	}
+	.menu__body._active:before {
+		right: 0%;
+		height: 70px;
+		background-color: #000000;
+	}
+	.menu__body._active {
+		right: 0px;
+	}
+	.menu__list {
+		margin: 0px 20% 8%;
+		position: relative;
+		z-index: 1200;
+	}
+	.menu__list li {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.menu__list > li {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		margin: 0px 0px 15px 0px;
+	}
+	.menu__list > li:last-child {
+		margin-bottom: 0px;
+	}
+	.menu__link {
+		padding: 15px 4px;
+		font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (767 - 320)));
+    	text-align: center;
+	}
+	/* ====================  Menu body  --End--  ==================== */
+	/* ===================================  Menu  --End--  =================================== */
+
+
+	/* ===================================  Page  --Start--  =================================== */
+	/* ====================  Hi  --Start--  ==================== */
+	.hi {
+		background-image: url(../img/background-image/mb.bgi-hi.png);
+		background-size: cover;
+		background-position-x: left;
+	}
+	/* ====================  Hi Content  ==================== */
+	.hi__content {
+		padding-bottom: 20%;
+		max-width: 100%;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
+	}
+	/* ====================  Title  ==================== */
+	.hi__title {
+		padding: 2px 12px;
+		color: #000000;
+		background-color: rgba(255, 255, 255, 0.6);
+		text-shadow: 0px, 2px, 232px #000000;
+	}
+	/* ====================  Text  ==================== */
+	.hi__text {
+		padding: 0px 6px;
+		color: #000000;
+		font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1200 - 320)));
+		background-color: rgba(255,255,255, 0.6);
+	}
+	/* ====================  Hi  --End--  ==================== */
+	/* ====================  About  --Start--  ==================== */
+	.about__content  {
+		padding: 55px 4px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.about__column:last-child {
+		padding-left: calc(4px + (35 - 4) * ((100vw - 320px) / (767 - 320)));
+		padding-right: calc(4px + (35 - 4) * ((100vw - 320px) / (767 - 320)));
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
+	}
+	.about__column:nth-child(1) {
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.about__column_img {
+		padding: 20px 0px;
+	}
+	/* ====================  About  --End--  ==================== */
+	/* ====================  Our  --Start--  ==================== */
+	.our__content {
+		padding: 70px 8px;
+	}
+	.our__column_button ._button__more_text {
+		padding: 4px 22px;
+	}
+	.swiper {
+		max-width: 100%;
+	}
+	/* ====================  Our  --End--  ==================== */
+	/* ====================  To help the shelter  --Start--  ==================== */
+	.help__content {
+		padding: 70px 0px 0px;
+	}
+	/* ====================  To help the shelter  --End--  ==================== */
+	/* ====================  Contacts  --Start--  ==================== */
+	.contact__content {
+		padding: 70px 4px;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
+	}
+	.contact__column {
+		max-width: 80%;
+	}
+	.contact__title  {
+		padding-top: 30px;
+	}
+	.contact__card {
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.contact__card_info {
+		padding: 18px 30px;
+		max-width: 100%;
+		font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (767 - 320)));
+	}
+	/* ====================  Contacts  --End--  ==================== */
+	/* ===================================  Page  --End--  =================================== */
+	/* ====================  Footer  --Start--  ==================== */
+	.footer {
+		background-image: url(../img/background-image/mb.bgi-footer.png);
+		background-size: cover;
+		background-position: center;
+	}
+	.footer__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.footer__column {
+		margin: 30px 0px;
+		padding: 35px 0px;
+		max-width: 70%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		text-align: center;
+		background-color: #211d1eeb;
+	}
+	.footer__column:last-child {
+		margin-bottom: 0px;
+	}
+	.footer__link {
+		margin: 15px 10px;
+	}
+	.footer__column:nth-child(2) .footer__link {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.footer__column:nth-child(2) .footer__link {
+		margin: 15px 10px;
+	}
+	.footer__column:nth-child(2) .footer__link span {
+		margin: 15px 0px;
+	}
+	/* ====================  Footer  --End--  ==================== */
+	/* ====================  Scroll Up Button  --Start--  ==================== */
+	.up__button_ico {
+		width: 60px;
+		height: 60px;
+	}
+	/* ====================  Scroll Up Button  --End--  ==================== */
+	/* ===================================  Popup Our Column  --Start--  =================================== */
+	.popup__ourcolumn_slide {
+        max-width: 90%;
+    }
+    .popup__ourcolumn_slide .icon__button_slide {
+        display: none;
+    }
+    .popup__ourcolumn_scile {
+        max-width: 90%;
+        text-align: start;
+    }
+    /* ===================================  Popup Our Column  --End--  =================================== */
+    /* ===================================  Popup Our Button  --Start--  =================================== */
+    .popup__our_column {
+        margin: 20px;
+        max-width: 75%;
+    }
+	.popup__our_column .our__column_title {
+		font-size: 20px;
+	}
+    .popup__our_column .our__column_button {
+        padding: 20px 2px;
+    }
+    .popup__our_column .our__column_button ._button__more_text {
+        padding: 16px 24px;
+		font-size: 18px;
+	    border: solid 1px #f1cdb3;
+    }
+    /* ===================================  Popup Our Button  --End--  =================================== */
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  Max-Width 767px  --End--  =================================== */
+/* ===================================  Max-Width 390px  --End--  =================================== */
+@media (max-width: 390px){
+	/* ====================  Popup  --Start--  ==================== */
+    .popup__info_content {
+		width: 100%;
+	}
+	.popup__info_content .popup__info_block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 0px 2px;
+    }
+    .popup__info_content .popup__info_block span {
+        margin: 7px 4px;
+    }
+    .popup__info_body {
+        width: 90%;
+        height: 60%;
+    }
+    .popup__our_column {
+        margin: 6px;
+		max-width: 90%;
+	}
+    .popup__our_column.our__column {
+        padding: 1px 0px 20px;
+    }
+	.popup__our_column .our__column_title {
+		font-size: 18px;
+	}
+    .popup__our_column .our__column_button ._button__more_text {
+        padding: 20px 24px;
+		font-size: 18px;
+    }
+	/* ====================  Popup  --End--  ==================== */
+}
+/* ===================================  Max-Width 390px  --End--  =================================== */
+/* ===================================  Max-Width 360px  --End--  =================================== */
+
+@media screen and (max-width: 360px){
+	.menu__list {
+		margin: 0px 2px;
+	}
+	.help__column {
+		max-width: 30%;
+	}
+	.contact__column {
+		max-width: 95%;
+	}
+	.footer__column {
+		max-width: 100%;
+	}
+	.up__button_ico {
+		width: 54px;
+		height: 54px;
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  Max-Width 360px  --End--  =================================== */
+/* ===================================  For Mobile  --End--  =================================== */

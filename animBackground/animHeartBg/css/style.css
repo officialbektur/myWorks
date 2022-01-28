@@ -1,0 +1,154 @@
+/* --------------------  Обнуление --Начало--  -------------------- */
+*,
+*::before,
+*::after {
+	margin: 0px 0px;
+	padding: 0px 0px;
+	border: 0;
+	-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}
+/* --------------------  Убираем линию под ссылками  -------------------- */
+a {
+	text-decoration: none;
+}
+/* --------------------  Убираем маркировку  -------------------- */
+ul,
+ol,
+li {
+	list-style: none;
+}
+/* --------------------  Убираем   -------------------- */
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* --------------------  Обнуление --Конец--  -------------------- */
+
+
+
+
+
+html,
+body {
+	min-height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	background: #e80202;
+	color: #000000;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+	overflow: hidden;
+}
+body._lock {
+	overflow-y: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+
+
+/* --------------------  Page --Начало--  -------------------- */
+.page {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	min-height: 100%;
+	z-index: 100;
+}
+.page__section {
+	min-height: 100vh;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	text-align: center;
+} 
+/* -----------------------------------  Anime --Начало--  ----------------------------------- */
+.page__anim {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+.animheartbg {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: #e80202;
+	transform: rotate(45deg);
+	-webkit-box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.2);
+	   box-shadow: 14px 14px 28px rgba(0, 0, 0, 0.2);
+}
+.animheartbg::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #e80202;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.1);
+	   box-shadow: 0px -20px 20px rgba(0, 0, 0, 0.1);
+}
+.animheartbg::after {
+	content: "";
+	position: absolute;
+	top: 0%;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background: #e80202;
+	border-radius: 50%;
+	-webkit-box-shadow: -20px 0px 20px rgba(0, 0, 0, 0.1);
+	   box-shadow: -20px 0px 20px rgba(0, 0, 0, 0.1);
+}
+/* -----------------------------------  Anime --Конец--  ----------------------------------- */
+.page__body {
+	width: 100%;
+}
+.page__body_title {
+	color: #ffffff;
+	font-size: 6em;
+	font-weight: 600;
+	line-height: 140%;
+}
+@media (max-width: 767px){
+	.animheartbg {
+		width:28px;
+		height:28px;
+	}
+	.page__body_title {
+		font-size: 250%;
+	}
+@supports (-webkit-appearance:none){}
+}

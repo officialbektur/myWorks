@@ -1,0 +1,32 @@
+._title {
+	color: $colorWhite;
+	font-size: 44px;
+	line-height: 120%;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+._texts {
+	color: $colorWhite;
+	font-size: 18px;
+	line-height: 120%;
+	font-weight: 300;
+}
+._button {
+	display: flex;
+	align-items: center;
+	button {
+		padding: 8px 33px;
+		font-family: $ff2;
+		color: $colorWhite;
+		font-size: 29px;
+		line-height: normal;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-radius: 6px;
+		background-color: $colorBlack;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		-webkit-tap-highlight-color: $clickByTouchColor1;
+	}
+}
