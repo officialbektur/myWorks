@@ -1,0 +1,220 @@
+/* ===================================  Header  --Start--  =================================== */
+// .header 
+.header {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 90;
+	transition: top 0.44s ease 0s;
+	// .header__body 
+	&__body {
+		padding: 3px 0px;
+		min-height: rem(70);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 95;
+	}
+}
+@import "_header__logo";// ====================  here Logo  ==================== //
+/* ===================================  Menu body  --Start--  =================================== */
+/* ====================  Menu list  ==================== */
+// .menu__list 
+.menu__list {
+	overflow: hidden;
+	@media (min-width: $mobile) {
+		padding: 10px 6px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		column-gap: 50px;
+		row-gap: 6px;
+	}
+	@media (max-width: $mobile) {
+		@include adaptiveValue("margin-left", 150, 35);
+		@include adaptiveValue("margin-right", 150, 35);
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// .menu__list li
+		li {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	@media (max-width: em(360)) {
+		margin: 0px 0px;
+	}
+	// .menu__list > li
+	> li {
+		position: relative;
+		@media (max-width: $mobile) {
+			flex-wrap: wrap;
+			margin: 0px;
+		}
+	}
+}
+// .menu__link
+.menu__link {
+	padding: 0px 6px;
+	position: relative;
+	width: 100%;
+	color: $colorWhite8;
+	font-family: ff(Inter);
+	font-size: rem(16);
+	font-weight: 400;
+	cursor: pointer;
+	user-select: none;
+	-webkit-tap-highlight-color: $clickByTouchColor;
+	transition: all 0.42s ease 0s;
+	@media (min-width: $mobile) {
+		// .menu__link::before
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -12px;
+			left: 50%;
+			width: 0%;
+			height: 6px;
+			background-color: $colorLightBrown2;
+			border-radius: 2px;
+			transition: all 0.42s ease 0s;
+		}
+		// .menu__link
+		html._pc &:hover {
+			color: $colorBlack;
+			text-shadow: 0 0 em(0.65) $colorBlack, 0 0 em(0.65) $colorBlack;
+			&::before{
+				left: 0%;
+				width: 100%;
+			}
+		}
+		// .menu__link._active
+		&._active {
+			color: $colorBlack;
+			text-shadow: 0 0 em(0.65) $colorBlack, 0 0 em(0.65) $colorBlack;
+			// .menu__link._active .menu__link::before
+			&::before{
+				left: 0%;
+				width: 100%;
+			}
+		} 
+	}
+	@media (max-width: $mobile) {
+		padding: rem(20) 0px;
+		color: $colorWhite;
+		@include adaptiveValue("font-size", 36, 30);
+		text-align: center;
+	}
+}
+/* ====================  Icon Menu Burger  ==================== */
+// .icon-menu
+.icon-menu {
+	display: none;
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		@include adaptiveValue("width", 70, 48);
+		@include adaptiveValue("height", 36, 30);
+		cursor: pointer;
+		z-index: 5;
+		-webkit-tap-highlight-color: $clickByTouchColor2;
+		// .icon-menu span
+		// .icon-menu::before
+		// .icon-menu::after
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: rem(3);
+			background-color: $colorBlack;
+			box-shadow: 0px 0px 2px $colorBlack;
+		}
+		// .icon-menu::before
+		&::before {
+			top: 0px;
+		}
+		// .icon-menu::after
+		&::after {
+			bottom: 0px;
+		}
+		// .icon-menu::span
+		span {
+			top: calc(50% - rem(1.5));
+		}
+		// .menu-open .icon-menu span
+		// .menu-open .icon-menu::before
+		// .menu-open .icon-menu::after
+		.menu-open & {
+			span {
+				transform: scale(0);
+			}
+			&::before {
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
+			}
+			&::after {
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
+			}
+		}
+	}
+}
+@media (max-width: $mobile) {
+	// .menu__body
+	.menu__body {
+		position: fixed;
+		top: 0px;
+		right: -100%;
+		width: 100%;
+		height: 100%;
+		padding: 100px 30px 30px 30px;
+		transition: right 0.5s ease 0s;
+		overflow-y: auto;
+		// .menu__body::before
+		&::before {
+			content: "";
+			position: fixed;
+			top: 0px;
+			right: -100%;
+			width: 100%;
+			height: rem(70);
+			background-color: $bgcolor1;
+			z-index: 90;
+			transition: right 0.5s ease 0s;
+		}
+		// .menu__body::after
+		&:after {
+			content: "";
+			position: fixed;
+			top: -90px;
+			right: -100%;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.86);
+			transform: translateY(90px);
+			transition: right 0.5s ease 0s;
+		}
+		// .menu-open .menu__body::before
+		// .menu-open .menu__body::after
+		.menu-open &::before,
+		.menu-open &::after {
+			right: 0%;
+		}
+		// .menu-open .menu__body
+		.menu-open & {
+			right: 0px;
+		}
+	}
+}
+/* ===================================  Menu body  --End--  =================================== */
+/* ===================================  Header  --End--  =================================== */

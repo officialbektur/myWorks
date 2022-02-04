@@ -1,0 +1,36 @@
+/* ===================================  Logo  --Start--  =================================== */
+// .header__logo 
+.header__logo {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	-webkit-tap-highlight-color: $clickByTouchColor;
+	@media (max-width: $mobile) {
+		align-items: baseline; 
+	}
+}
+/* ====================  Logo Icon  ==================== */
+// .header__logo_icon 
+.header__logo_icon {
+	// .header__logo_icon:first-child 
+	&:first-child {
+		width: rem(32);
+		height: rem(32);
+		@media (max-width: $mobile) {
+			@include adaptiveValue("width", 36, 24); 
+		}
+	}
+	// .header__logo_icon:last-child 
+	&:last-child {
+		@include adaptiveValue("margin-left", 38, 14);
+		width: rem(91);
+		height: rem(29);
+		@media (max-width: $mobile) {
+			@include adaptiveValue("margin-left", 14, 6);
+			@include adaptiveValue("width", 95, 85); 
+		}
+	}
+}
+/* ===================================  Logo  --End--  =================================== */
