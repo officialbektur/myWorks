@@ -1,0 +1,138 @@
+// Заголовки, общие БЄМ блоки и проче...
+// ._title
+._title {
+	font-family: ff(Manrope);
+	color: $colorBlack;
+	font-size: rem(28);
+	font-weight: 700;
+}
+.body-block {
+	@include adaptiveValue("padding-top", 60, 10);
+	@include adaptiveValue("padding-bottom", 20, 8);
+}
+// .slide-pagination
+.slide-pagination {
+	position: absolute;
+	bottom: rem(20);
+	display: flex;
+	align-items: center;
+	column-gap: rem(6);
+	@media (max-width: $mobile) {
+		bottom: rem(5);
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	& span {
+		position: relative;
+		@include adaptiveValue("width", 26, 16);
+		@include adaptiveValue("height", 26, 16);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: transparent;
+		border-radius: 50%;
+		border: solid 1px transparent;
+		cursor: pointer;
+		transition: all 0.5s ease 0s;
+		&:before {
+			content: "";
+			@include adaptiveValue("width", 6, 4);
+			@include adaptiveValue("height", 6, 4);
+			background: $colorLimeGreen;
+			border-radius: 50%;
+		}
+	}
+	& .swiper-pagination-bullet-active {
+		border: solid 1px $colorLimeGreen;
+	}
+}
+
+// .slide-button-next
+.slide-button-next {
+	right: rem(2);
+}
+// .slide-button-prev
+.slide-button-prev {
+	left: rem(2);
+	&::before {
+		transform: rotate(180deg);
+	}
+}
+// .slide-button-next
+// .slide-button-prev
+.slide-button-next,
+.slide-button-prev {
+	padding: rem(14);
+	position: absolute;
+	top: 50%;
+	background-color: $colorWhite;
+	box-shadow: 0px 0px rem(4) rgba($color: $colorVioletBlueCrayola, $alpha: 0.2), 0px 0px rem(6) rgba($color: $colorVioletBlueCrayola, $alpha: 0.2);
+	border-radius: 50%;
+	transform: translateY(-50%);
+	opacity: 1;
+	visibility: visible;
+	cursor: pointer;
+	transition: all 0.4s ease 0s;
+	@media (max-width: $mobile) {
+		display: none;
+	}
+	@media (any-hover: hover) {
+		&:hover{
+			box-shadow: 0px 0px rem(6) rgba($color: $colorVioletBlueCrayola, $alpha: 0.3), 0px 0px rem(8) rgba($color: $colorVioletBlueCrayola, $alpha: 0.3);
+		}
+	}
+	// .slide-button-next:before
+	// .slide-button-prev:before
+	&:before {
+		color: $colorVioletBlueCrayola;
+		font-size: rem(18);
+	}
+	// .slide-button-next.swiper-button-disabled
+	// .slide-button-prev.swiper-button-disabled
+	&.swiper-button-disabled {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+// .masseg__info
+.masseg__info {
+	position: fixed;
+	top: 30%;
+	right: -130%;
+	z-index: 12000;
+	padding: 0px rem(12);
+	min-width: rem(48);
+	height: rem(48);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: rem(4);
+	background-color: $colorWhite;
+	border-top-left-radius: rem(4);
+	border-bottom-left-radius: rem(4);
+	box-shadow: 0px 0px rem(6) rgba($color: $colorVioletBlueCrayola, $alpha: 0.4), 
+				0px 0px rem(10) rgba($color: $colorVioletBlueCrayola, $alpha: 0.5);
+	transition: right 0.34s ease 0s;
+	&._active {
+		right: 0px;
+	}
+	// .masseg__info span
+	& span {
+		color: $colorVioletBlueCrayola;
+		font-size: rem(22);
+		align-items: center;
+		display: none;
+	}
+	&.comparison span:nth-child(1) {
+		display: flex;
+	}
+	&.favourites span:nth-child(2) {
+		display: flex;
+	}
+	&.basket span:nth-child(3) {
+		display: flex;
+	}
+	& span:nth-child(4) {
+		display: flex;
+	}
+}

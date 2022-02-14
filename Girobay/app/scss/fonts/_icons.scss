@@ -1,0 +1,72 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+/* ====================  Titles  ==================== */  
+.icon-swiper-button:before {
+	content: "\e913";
+}
+.icon-marker-map:before {
+	content: "\e905";
+}
+.icon-monowheels:before {
+	content: "\e908";
+}
+.icon-phone:before {
+	content: "\e909";
+}
+.icon-electricscooters-1:before {
+	content: "\e90a";
+}
+.icon-email:before {
+	content: "\e90b";
+}
+.icon-electricscooters-2:before {
+	content: "\e90c";
+}
+.icon-segways:before {
+	content: "\e90d";
+}
+.icon-electricboots:before {
+	content: "\e90e";
+}
+.icon-gyroscuters:before {
+	content: "\e90f";
+}
+.icon-electricbicycles:before {
+	content: "\e910";
+}
+.icon-arrow-right:before {
+	content: "\e907";
+}
+.icon-list-plus:before {
+	content: "\e906";
+}
+.icon-user:before {
+	content: "\e900";
+}
+.icon-heart:before {
+	content: "\e901";
+}
+.icon-search:before {
+	content: "\e902";
+}
+.icon-shopping-cart:before {
+	content: "\e903";
+}
+.icon-ellipsis-v:before {
+	content: "\e904";
+}

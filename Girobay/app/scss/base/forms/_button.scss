@@ -1,0 +1,54 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: 0px 0px;
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	// .button-cart
+	&-cart {
+		@include adaptiveValue("padding-top", 10, 8);
+		@include adaptiveValue("padding-bottom", 10, 8);
+		@include adaptiveValue("padding-left", 6, 4);
+		@include adaptiveValue("padding-right", 6, 4);
+		width: 100%;
+		color: $colorWhite;
+		@include adaptiveValue("font-size", 13, 12);
+		font-weight: 600;
+		background-color: $colorVioletBlueCrayola;
+		border-radius: 5px;
+		transition: all 0.6s ease 0s;
+		@media (any-hover: hover) {
+			&:hover{
+				box-shadow: 0px 0px 6px rgba($color: $colorVioletBlueCrayola, $alpha: 0.8), 0px 0px 12px rgba($color: $colorVioletBlueCrayola, $alpha: 0.8);
+			}
+		}
+	}
+	// .button-order
+	&-order {
+		@include adaptiveValue("padding-top", 10, 8);
+		@include adaptiveValue("padding-bottom", 10, 8);
+		@include adaptiveValue("padding-left", 6, 4);
+		@include adaptiveValue("padding-right", 6, 4);
+		width: 100%;
+		color: $colorVioletBlueCrayola;
+		@include adaptiveValue("font-size", 13, 12);
+		font-weight: 600;
+		background-color: $colorWhite;
+		border: solid 1px $colorPeriwinkleCrayola;
+		border-radius: 5px;
+		transition: all 0.6s ease 0s;
+		@media (any-hover: hover) {
+			&:hover{
+				box-shadow: 0px 0px 6px rgba($color: $colorVioletBlueCrayola, $alpha: 0.4), 0px 0px 12px rgba($color: $colorVioletBlueCrayola, $alpha: 0.4);
+			}
+		}
+	}
+	// .button._fw
+	&._fw {
+		width: 100%;
+	}
+}

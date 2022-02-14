@@ -1,0 +1,22 @@
+body {
+	color: $colorBlack;
+	line-height: 1;
+	font-family: $fontFamily;
+	font-weight: 400;
+	background-color: $bgcBody;
+	overflow-x: hidden;
+	overflow-y: auto;
+	// Скролл заблокирован
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+	}
+	// Сайт загружен
+	.loaded & {
+	}
+	// Для экрана которые ниже 300px
+	&._minWindowScreen300 {
+		overflow: auto;
+		touch-action: auto;
+	}
+}

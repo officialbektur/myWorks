@@ -1,0 +1,695 @@
+/* ===================================  Page  --Start--  =================================== */
+.page {
+	@include adaptiveValue("padding-top", 192, 124);
+	display: flex;
+	flex-direction: column;
+}
+/* ===================================  Hi  --Start--  =================================== */
+.hi {
+	// .hi__body
+	&__body {
+		@include adaptiveValue("height", 450, 180);
+	}
+	// .hi-slider
+	&-slider {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		background-image: url(@img/bgi/hislider-bgi.png);
+		background-size: cover;
+		background-position: center;
+		border-top-right-radius: rem(6);
+		overflow: hidden;
+		@media (max-width: $tablet) {
+			border-radius: rem(10);
+			box-shadow: 0px 0px rem(3) rgba($color: $colorBlack, $alpha: 0.2) , 0px 0px rem(8) rgba($color: $colorBlack, $alpha: 0.2);
+		}
+	}
+	// .hi-swiper
+	&-swiper {
+		width: 100%;
+		min-height: 100%;
+		box-sizing: content-box;
+		position: relative;
+	}
+	// .hi-slide
+	&-slide {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		@include adaptiveValue("column-gap", 115, 0);
+		// .hi-slide-info
+		&-info {
+			@include adaptiveValue("padding-left", 74, 20);
+			// .hi-slide-info__title
+			&__title {
+				color: $colorBlackBrown;
+				font-family: ff(Manrope);
+				@include adaptiveValue("font-size", 46, 14);
+				font-weight: 800;
+			}
+			// .hi-slide-info__subtitle
+			&__subtitle {
+				padding: rem(5) 0px;
+				color: $colorBlackBrown;
+				@include adaptiveValue("font-size", 20, 10);
+				font-weight: 400;
+				line-height: math.div( 20, 20);
+			}
+			// .hi-slide-info__button
+			&__button {
+				margin-top: rem(10);
+				@include adaptiveValue("width", 214, 117);
+				@include adaptiveValue("height", 49, 27);
+				color: $colorWhite;
+				@include adaptiveValue("font-size", 16, 10);
+				font-weight: 500;
+				background: $colorLimeGreen;
+				border-radius: rem(4);
+				transition: all 0.4s ease 0s;
+				@media (any-hover: hover) {
+					&:hover{
+						box-shadow: 0px 0px rem(8) $colorLimeGreen, 
+									0px 0px rem(16) $colorLimeGreen;
+					}
+				}
+			}
+		}
+		// .hi-slide__img
+		&__img {
+			@include adaptiveValue("width", 427.98, 114.07);
+			@include adaptiveValue("height", 392, 104.48);
+			position: relative;
+			& img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				object-fit: cover;
+				background: #00000075 url("@img/icons/loading.gif") center / rem(50) no-repeat;
+				transition: all 0.42s ease 0s;
+				&._lazy-loaded {
+					background: none;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+	// .hi-slide-pagination  
+	&-slide-pagination {
+		@include adaptiveValue("left", 74, 20);
+		@media (max-width: $mobile) {
+			left: 50%;
+		}
+	}
+}
+/* ===================================  Hi  --End--  =================================== */
+/* ===================================  Popuplar  --Start--  =================================== */
+.popuplar {
+	// .popuplar__row
+	&__row {
+		padding-top: rem(22);
+		display: flex;
+		justify-content: space-between;
+		@include adaptiveValue("column-gap", 31, 12);
+		@media (max-width: $mobile) {
+			column-gap: 0px;
+		}
+	}
+}
+.popuplar-column {
+	position: relative;
+	@include adaptiveValue("width", 297, 222);
+	height: 100%;
+	background-color: $colorGrideperlevy;
+	border-radius: rem(6);
+	cursor: pointer;
+	@media (min-width: $mobile) {
+		@media (any-hover: hover) {
+			&:hover{
+				& .popuplar-column__title {
+					height: 100%;
+					border-radius: rem(6);
+				}
+			}
+		}
+	}
+	@media (max-width: $mobile) {
+		padding: 0px rem(6);
+		width: rem(177);
+		height: rem(61);
+		display: flex;
+		align-items: center;
+		column-gap: rem(6);
+	}
+	// .popuplar-column__img
+	&__img {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		background-color: $colorWhite;
+		@media (max-width: $mobile) {
+			width: rem(51);
+			height: rem(51);
+		}
+		& img {
+			object-fit: cover;
+			@media (max-width: $mobile) {
+				object-fit: contain;
+			}
+		}
+	}
+	// .popuplar-column__title
+	&__title {
+		width: 100%;
+		height: rem(78);
+		color: $colorWhite;
+		@include adaptiveValue("font-size", 16, 10);
+		line-height: math.div( 21.86, 16);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.4s ease 0s;
+		@media (min-width: $mobile) {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			padding: 0px rem(37);
+			text-align: center;
+			background: linear-gradient(84.44deg, #7FD155 14.6%, $colorVioletBlueCrayola 100.12%);
+			border-bottom-left-radius: rem(6);
+			border-bottom-right-radius: rem(6);
+			opacity: 0.9;
+		}
+		@media (max-width: $mobile) {
+			color: $colorBlack;
+			height: 100%;
+		}
+	}
+}
+/* ===================================  Popuplar  --End--  =================================== */
+/* ===================================  Block  --Start--  =================================== */
+.block {
+	// .block__top 
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	// .block__title
+	&__title {
+		@include adaptiveValue("font-size", 28, 17);
+	}
+	// .block__alllink
+	&__alllink {
+		display: none;
+		@media (max-width: $mobile) {
+			display: flex;
+			color: $colorVioletBlueCrayola;
+			font-size: rem(11);
+		}
+	}
+	// .block__content
+	&__content {
+		position: relative;
+		@include adaptiveValue("padding-top", 30, 10);
+		@include adaptiveValue("padding-bottom", 20, 10);
+		@include adaptiveValue("padding-left", 6, 2);
+		@include adaptiveValue("padding-right", 6, 2);
+		user-select: none;
+		overflow: hidden;
+	}
+	// .block__swiper
+	&__swiper {
+		display: flex;
+	}
+	// .block__slide
+	&__slide {
+		width: rem(233);
+		@include adaptiveValue("height", 341.94, 269);
+		box-shadow: 0px 0px rem(4) rgba(0, 0, 0, 0.6);
+		@media (max-width: $mobile) {
+			height: 100%;
+		}
+	}
+	// .block__block
+	&__block {
+		padding: rem(10) rem(10) rem(17);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.block-column {
+	// .block-column__img
+	&__img {
+		@include adaptiveValue("width", 213, 130);
+		@include adaptiveValue("height", 141, 87);
+		position: relative;
+		& img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #00000075 url("@img/icons/loading.gif") center / rem(50) no-repeat;
+			object-fit: cover;
+			transition: all 0.42s ease 0s;
+			&._lazy-loaded {
+				background: none;
+				object-fit: contain;
+			}
+		}
+	}
+	// .block-column__info
+	&__info {
+		padding: rem(17) 0px 0px;
+	}
+	// .block-column__title
+	&__title {
+		padding: rem(4) 0px;
+		color: $colorBlackBrown;
+		@include adaptiveValue("font-size", 14, 12);
+		line-height: math.div( 16.94, 14);
+	}
+	// .block-column__subinfo
+	&__subinfo {
+		padding: rem(4) 0px;
+		display: flex;
+		justify-content: space-between;
+	}
+	// .block-column__price
+	&__price {
+		color: $colorBlackBrown;
+		font-weight: 700;
+		@include adaptiveValue("font-size", 16, 13);
+	}
+	// .block-column__article
+	&__article {
+		color: $colorMotherOfPearlDarkGray;
+		font-weight: 300;
+		@include adaptiveValue("font-size", 12, 10);
+	}
+	// .block-column__buttons
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		@media (max-width: $mobile) {
+			flex-direction: row;
+			justify-content: space-between;
+			column-gap: rem(5);
+		}
+	}
+	// .block-column__cart
+	&__cart {
+		margin: rem(4) 0px;
+		&::before {
+			display: none;
+		}
+		@media (max-width: $mobile) {
+			padding: rem(10) rem(14);
+			width: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			&::before {
+				display: block;
+			}
+			span {
+				display: none;
+			}
+		}
+	}
+	// .block-column__order
+	&__order {
+		margin: rem(4) 0px;
+	}
+}
+.block-column-top {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: $mobileSmall) {
+		justify-content: end;
+	}
+	// .block-column-top__banner
+	&__banner {
+		padding: rem(4) rem(8);
+		color: $colorWhite;
+		font-size: rem(12);
+		font-weight: 500;
+		background-color: $colorLimeGreen;
+		border-radius: rem(4);
+		@media (max-width: $mobileSmall) {
+			display: none;
+		}
+	}
+	// .block-column-top__icons
+	&__icons {
+		display: flex;
+		column-gap: rem(14);
+	}
+	// .block-column-top__icon
+	&__icon {
+		color: $colorMotherOfPearlDarkGray;
+		background-color: #FFF;
+		font-size: rem(15);
+		cursor: pointer;
+		transition: all 0.4s ease 0s;
+		&._active:first-child {
+			&::before {
+				color: $colorVioletBlueCrayola;
+				animation: animBlockanimBlockTopIcon 1.2s ease 0s;
+			}
+		}
+		&._active:last-child {
+			&::before {
+				color: $colorRed;
+				animation: animBlockanimBlockTopIcon 1.2s ease 0s;
+			}
+		}
+		@keyframes animBlockanimBlockTopIcon {
+			0% {
+				transform: scale(0.8);
+			}
+			25%, 75% {
+				transform: scale(1.4);
+			} 
+			50%, 95% {
+				transform: scale(0.8);
+			} 
+			100% {
+				transform: scale(1);
+			}
+		}
+	}
+}
+/* ===================================  Block  --End--  =================================== */
+/* ===================================  Brand  --Start--  =================================== */
+.brand {
+	// .brand__title
+	&__title {
+		@include adaptiveValue("font-size", 28, 17);
+	}
+	// .brand__content
+	&__content {
+		@include adaptiveValue("padding-top", 34, 14);
+		@include adaptiveValue("padding-bottom", 34, 24);
+		overflow: hidden;
+	}
+	// .brand__slider
+	&__slider {
+		padding: rem(12) 0px;
+		position: relative;
+		@include adaptiveValue("height", 127, 93);
+	}
+	// .brand__slide
+	&__slide {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 0px rem(4) rgba($color: $colorVioletBlueCrayola, $alpha: 0.2), 0px 0px rem(6) rgba($color: $colorVioletBlueCrayola, $alpha: 0.2);
+		border-radius: rem(6);
+		// .brand__slide_img
+		&_img {
+			@include adaptiveValue("width", 150.68, 109);
+			@include adaptiveValue("height", 69.24, 94.78);
+			position: relative;
+			& img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #00000075 url("@img/icons/loading.gif") center / rem(50) no-repeat;
+				object-fit: cover;
+				transition: all 0.42s ease 0s;
+				&._lazy-loaded {
+					background: none;
+					object-fit: contain;
+				}
+			}
+		}
+	}
+	// .brand-slide-pagination
+	&-slide-pagination {
+		bottom: rem(-12);
+		@media (min-width: $mobile) {
+			display: none;
+		}
+		@media (max-width: $mobile) {
+			bottom: rem(-20);
+		}
+	}
+}
+/* ===================================  Brand  --End--  =================================== */
+.information {
+	// .information__body
+	&__body {
+		@media (max-width: $mobile) {
+			background-image: url('@img/bgi/information-bgi.png');
+			background-size: cover;
+			background-position: center;
+		}
+	}
+	// .information__content
+	&__content {
+		display: flex;
+		@media (min-width: $mobile) {
+			justify-content: space-between;
+			column-gap: rem(66);
+		}
+	}
+	// .information__img
+	&__img {
+		max-width: rem(581);
+		width: 100%;
+		height: rem(501);
+		position: relative;
+		& img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: #00000075 url("@img/icons/loading.gif") center / rem(50) no-repeat;
+			object-fit: cover;
+			transition: all 0.42s ease 0s;
+			&._lazy-loaded {
+				background: none;
+				object-fit: contain;
+				@media (min-width: $tablet) {
+					object-fit: none;
+				}
+			}
+		}
+		@media (max-width: $mobile) {
+			display: none;
+		}
+	}
+}
+.information-texts {
+	@include adaptiveValue("padding-right", 83, 0);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media (max-width: $mobile) {
+		padding: rem(36) rem(15);
+	}
+	// .information-texts__title
+	&__title {
+		color: $colorBlackBrown;
+		@include adaptiveValue("font-size", 38, 20);
+		@media (max-width: $mobile) {
+			color: $colorWhite;
+			font-weight: 800;
+		}
+	}
+	// .information-texts__text
+	&__text {
+		@include adaptiveValue("padding-top", 30, 13);
+		display: flex;
+		flex-direction: column;
+		@include adaptiveValue("row-gap", 20, 10);
+		color: $colorBlackBrown;
+		@include adaptiveValue("font-size", 16, 12);
+		line-height: math.div( 24, 16);
+		@media (max-width: $mobile) {
+			color: $colorWhite;
+			font-weight: 500;
+		}
+	}
+}
+.information-rows {
+	// .information-rows__content
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include adaptiveValue("column-gap", 30, 15);
+		@media (max-width: $mobile) {
+			padding: rem(30) 0px;
+			flex-wrap: wrap;
+			@include adaptiveValue("column-gap", 15, 12);
+			@include adaptiveValue("row-gap", 15, 12);
+		}
+	}
+	// .information-rows__column
+	&__column {
+		@include adaptiveValue("width", 298, 139);
+		@include adaptiveValue("height", 151, 132);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		row-gap: rem(12);
+		box-shadow: 0px 0px rem(4) rgba($color: $colorVioletBlueCrayola, $alpha: 0.2), 
+					0px 0px rem(6) rgba($color: $colorVioletBlueCrayola, $alpha: 0.2);
+		border-radius: rem(6);
+		@media (max-width: $mobile) {
+			max-width: 48%;
+			width: 100%;
+		}
+		@media (max-width: $mobileSmall) {
+			max-width: 100%;
+		}
+	}
+	// .information-rows__icon
+	&__icon {
+		@include adaptiveValue("width", 41, 30);
+		@include adaptiveValue("height", 41, 30);
+	}
+	// .information-rows__title
+	&__title {
+		padding: 0px rem(20);
+		color: $colorBlackBrown;
+		@include adaptiveValue("font-size", 15, 12);
+		line-height: math.div( 22, 15);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+}
+
+
+.reviews {
+	// .reviews__body
+	&__body {
+		margin: 0px rem(25);
+		@include adaptiveValue("padding-top", 80, 30);
+		@include adaptiveValue("padding-bottom", 80, 30);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		@include adaptiveValue("width", 1018, 290);
+		@include adaptiveValue("min-height", 416, 429);
+		background: linear-gradient(83.58deg, #86E073 0.98%, #4C6B78 96.11%), #FFFFFF;
+		border-radius: rem(9);
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+	// .reviews__title
+	&__title {
+		@include adaptiveValue("padding-top", 60, 44);
+		@include adaptiveValue("padding-bottom", 50, 26);
+		color: $colorWhite;
+		@include adaptiveValue("font-size", 28, 17);
+		line-height: math.div( 3.22, 28);
+	}
+	// .reviews__content_slider
+	&__content_slider {
+		@include adaptiveValue("padding-left", 120, 14);
+		@include adaptiveValue("padding-right", 120, 14);
+		width: 100%;
+		min-height: rem(192);
+		@media (max-width: $mobile) {
+			@include adaptiveValue("padding-bottom", 100, 60);
+		}
+		& .slide-button-prev {
+			@include adaptiveValue("left", 24, 0);
+			@media (max-width: $tablet) {
+				left: rem(-20);
+			}
+		}
+		& .slide-button-next {
+			@include adaptiveValue("right", 24, 0);
+			@media (max-width: $tablet) {
+				right: rem(-20);
+			}
+		}
+		& .slide-button-next, 
+		& .slide-button-prev {
+			opacity: 1;
+			@media (max-width: $mobile) {
+				display: block;
+			}
+			& .swiper-button-disabled {
+				opacity: 0.6;
+			}
+		}
+	}
+	// .reviews__slider
+	&__slider {
+		overflow: hidden;
+		@media (max-width: $mobile) {
+			width: 100%;
+		}
+	}
+	// .reviews-slide-pagination
+	&-slide-pagination {
+		// .reviews-slide-pagination
+		bottom: rem(39);
+		left: 50%;
+		transform: translateX(-50%);
+		@media (max-width: $mobile) {
+			@include adaptiveValue("padding", 50, 20);
+		}
+		& span:before {
+			background: $colorWhite;
+		}
+		// .reviews-slide-pagination .swiper-pagination-bullet-active
+		& .swiper-pagination-bullet-active {
+			border-color: $colorWhite;
+		}
+	}
+	// .reviews .slide-button-next:before
+	// .reviews .slide-button-prev:before
+	& .slide-button-next:before,
+	& .slide-button-prev:before {
+		color: $colorLimeGreen;
+	}
+}
+// .reviews
+.reviews-slide {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	// .reviews-slide__texts
+	&__texts {
+		color: $colorWhite;
+		font-size: rem(16);
+		font-weight: 400;
+		line-height: math.div( 28, 16);
+	}
+	// .reviews-slide__username
+	&__username {
+		padding-top: rem(22);
+		color: $colorWhite;
+		font-size: rem(18);
+		font-weight: 500;
+		line-height: math.div( 22, 18);
+		letter-spacing: 0.01em;
+	}
+}
+
+/* =============================================  Page  --End--  ============================================= */

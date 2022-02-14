@@ -1,0 +1,12 @@
+/* ===================================  Logo  --Start--  =================================== */
+// .header__logo 
+.header__logo {
+	border-radius: 50%;
+	position: relative;
+	z-index: 91;
+	@include adaptiveValue("width", 169, 117);
+	@include adaptiveValue("height", 36, 25);
+	cursor: pointer;
+	-webkit-tap-highlight-color: $clickByTouchColor0;
+}
+/* ===================================  Logo  --End--  =================================== */
